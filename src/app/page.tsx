@@ -3,10 +3,7 @@ import Style from './page.module.scss';
 import Logo from '@/img/logo.png';
 import Qr from '@/img/qr-code.webp';
 import Why from '@/img/why-us.png';
-import Image4 from '@/img/4.webp';
-import Image8 from '@/img/8.webp';
-import Image9 from '@/img/9.webp';
-import Image12 from '@/img/12.webp';
+
 import Profile from '@/img/profile2.webp';
 import Image from 'next/image';
 import { FaPhone } from 'react-icons/fa6';
@@ -16,6 +13,7 @@ import { MdArrowRight } from 'react-icons/md';
 import { ButtonPrimary, ButtonSecondary } from '@/components/Buttons/Buttons';
 import ContactForm from '@/components/ContactForm/ContactForm';
 import Navigation from '@/components/Navigations/Navigation';
+import ImagesCarousel from '@/components/ImagesCarousel/ImagesCarousel';
 export default function Home() {
     return (
         <>
@@ -197,36 +195,7 @@ function GallerySection() {
         <section className={Style.sectionGallery}>
             <div className={Style.galleryContainer}>
                 <h2 className={Style.title}>Mes Réalisations</h2>
-                <div className={Style.carousel}>
-                    <Image
-                        src={Image8}
-                        width={250}
-                        height={250}
-                        alt="Barbershop client"
-                        loading="eager"
-                    />
-                    <Image
-                        src={Image4}
-                        width={250}
-                        height={250}
-                        alt="Barbershop client"
-                        loading="eager"
-                    />
-                    <Image
-                        src={Image9}
-                        width={250}
-                        height={250}
-                        alt="Barbershop client"
-                        loading="eager"
-                    />
-                    <Image
-                        src={Image12}
-                        width={250}
-                        height={250}
-                        alt="Barbershop client"
-                        loading="eager"
-                    />
-                </div>
+                <ImagesCarousel />
                 <ButtonPrimary path="/gallery">Voir Plus</ButtonPrimary>
             </div>
         </section>

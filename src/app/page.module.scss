@@ -20,9 +20,10 @@
         letter-spacing: 5px;
         padding-top: var(--padding-xs);
         span {
-            font-size: 8rem;
+            font-size: clamp(7.8rem, 8rem + 1vw, 8rem);
             letter-spacing: 9px;
             color: var(--color-primary);
+            text-align: center;
         }
     }
     .heroTextBox {
@@ -430,6 +431,35 @@
                 .infoBox {
                     align-items: center;
                 }
+            }
+        }
+    }
+}
+@media screen and (max-width: 640px) {
+    .sectionWhyUs {
+        .textBox {
+            ul {
+                gap: var(--spacing-sm);
+            }
+        }
+    }
+}
+@media screen and (max-width: 530px) {
+    .header {
+        h1 {
+            font-size: clamp(2.8rem, 2rem + 1vw, 3rem);
+            span {
+                font-size: clamp(4.8rem, 5rem + 1vw, 5rem);
+            }
+        }
+    }
+}
+@media screen and (max-width: 375px) {
+    .header {
+        h1 {
+            font-size: clamp(2.3rem, 2.5rem + 1vw, 2.5rem);
+            span {
+                font-size: clamp(3.2rem, 3.4rem + 1vw, 3.4rem);
             }
         }
     }
