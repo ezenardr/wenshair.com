@@ -6,11 +6,13 @@ import { ButtonPrimary } from '../Buttons/Buttons';
 import Style from './navigation.module.scss';
 import Logo from '@/img/logo.png';
 import { AiOutlineMenu } from 'react-icons/ai';
+import { usePathname } from 'next/navigation';
 
 export default function Navigation() {
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const [sticky, setSticky] = useState<boolean>(false);
-
+    const pathName = usePathname();
+    console.log(pathName);
     function toggleScticky() {
         if (window.scrollY > 50) setSticky(true);
         else setSticky(false);
@@ -34,14 +36,21 @@ export default function Navigation() {
             <ul className={`${Style.navList} ${isOpen && Style.isOpen}`}>
                 <li onClick={() => setIsOpen(false)}>
                     <Link
-                        className={`${Style.navLink} ${Style.active}`}
+                        className={`${Style.navLink} ${
+                            pathName === '/' ? Style.active : ''
+                        }`}
                         href="/"
                     >
                         Accueil
                     </Link>
                 </li>
                 <li onClick={() => setIsOpen(false)}>
-                    <Link className={Style.navLink} href="/gallery">
+                    <Link
+                        className={`${Style.navLink} ${
+                            pathName === '/gallery' ? Style.active : ''
+                        }`}
+                        href="/gallery"
+                    >
                         Gallery
                     </Link>
                 </li>
