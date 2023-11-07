@@ -1,3 +1,6 @@
+'use client';
+import { motion } from 'framer-motion';
+import { fadeIn } from './variants';
 import Link from 'next/link';
 import Logo from '@/img/logo.png';
 import Qr from '@/img/qr-code.webp';
@@ -13,6 +16,15 @@ import ContactForm from '@/components/ContactForm/ContactForm';
 import Navigation from '@/components/Navigations/Navigation';
 import ImagesCarousel from '@/components/ImagesCarousel/ImagesCarousel';
 import Style from './page.module.scss';
+
+const variants = (direction: string, delay: number) => {
+    return {
+        variants: fadeIn(direction, delay),
+        initial: 'hidden',
+        whileInView: 'show',
+        viewport: { once: true, amount: 0.7 },
+    };
+};
 export default function Home() {
     return (
         <>
@@ -31,38 +43,50 @@ function Header() {
         <>
             <header className={Style.header}>
                 <Navigation />
-                <h1>
+                <motion.h1 {...variants('up', 0)}>
                     Premium <br />{' '}
                     <span className={Style.accent}>WensHair</span> <br />
                     Barbershop
-                </h1>
+                </motion.h1>
                 <div className={Style.heroTextBox}>
-                    <div className={Style.heroContentBox}>
+                    <motion.div
+                        {...variants('up', 0.1)}
+                        className={Style.heroContentBox}
+                    >
                         <p className={Style.contentTitle}>Rapide</p>
                         <div className={Style.diamond}></div>
                         <p className={Style.contentText}>
                             Avec une expertise rapide, Soyez prêt à briller en
                             un rien de temps.
                         </p>
-                    </div>
-                    <div className={Style.heroContentBox}>
+                    </motion.div>
+                    <motion.div
+                        {...variants('up', 0.1)}
+                        className={Style.heroContentBox}
+                    >
                         <p className={Style.contentTitle}>Cool</p>
                         <div className={Style.diamond}></div>
                         <p className={Style.contentText}>
                             Le style est notre marque. Une ambiance
                             décontractée, où l&apos;élégance est la norme.
                         </p>
-                    </div>
-                    <div className={Style.heroContentBox}>
+                    </motion.div>
+                    <motion.div
+                        {...variants('up', 0.1)}
+                        className={Style.heroContentBox}
+                    >
                         <p className={Style.contentTitle}>Abordable</p>
                         <div className={Style.diamond}></div>
                         <p className={Style.contentText}>
                             Le raffinement n&apos;a pas de prix.! Obtenez un
                             look de star sans vider votre portefeuille.
                         </p>
-                    </div>
+                    </motion.div>
                 </div>
-                <div className={Style.contactBox}>
+                <motion.div
+                    {...variants('up', 0.2)}
+                    className={Style.contactBox}
+                >
                     <div className={Style.contact}>
                         <div className={Style.contactLogo}>
                             <Image
@@ -112,7 +136,7 @@ function Header() {
                             Réservation
                         </ButtonSecondary>
                     </div>
-                </div>
+                </motion.div>
             </header>
         </>
     );
@@ -130,22 +154,29 @@ function WhyUs() {
     ];
     return (
         <section className={Style.sectionWhyUs}>
-            <Image
-                alt="man getting facial"
-                src={Why}
-                width={700}
-                height={500}
-                loading="eager"
-            />
+            <motion.div {...variants('right', 0)}>
+                <Image
+                    alt="man getting facial"
+                    src={Why}
+                    width={700}
+                    height={500}
+                    loading="eager"
+                />
+            </motion.div>
             <div className={Style.textBox}>
-                <h2 className={Style.title}>Raison de me Préférer?</h2>
+                <motion.h2 {...variants('left', 0.1)} className={Style.title}>
+                    Raison de me Préférer?
+                </motion.h2>
                 <ul className={Style.textList}>
                     {reasons.map((reason) => {
                         return (
-                            <li key={Math.random()}>
+                            <motion.li
+                                {...variants('left', 0.2)}
+                                key={Math.random()}
+                            >
                                 <MdArrowRight className={Style.icon} />
                                 <p>{reason}</p>
-                            </li>
+                            </motion.li>
                         );
                     })}
                 </ul>
@@ -160,31 +191,48 @@ function PricingSection() {
     return (
         <section className={Style.sectionPricing} id="pricing">
             <div className={Style.pricingContainer}>
-                <h2 className={Style.title}>Mes Tarifs</h2>
+                <motion.h2 {...variants('up', 0)} className={Style.title}>
+                    Mes Tarifs
+                </motion.h2>
                 <div className={Style.pricing}>
                     <div className={Style.items}>
-                        <div className={Style.item}>
+                        <motion.div
+                            {...variants('up', 0.1)}
+                            className={Style.item}
+                        >
                             <p>Coupe Simple</p>
                             <p>$30+</p>
-                        </div>
-                        <div className={Style.item}>
+                        </motion.div>
+                        <motion.div
+                            {...variants('up', 0.1)}
+                            className={Style.item}
+                        >
                             <p>Avec Barbe</p>
                             <p>$35+</p>
-                        </div>
-                        <div className={Style.item}>
+                        </motion.div>
+                        <motion.div
+                            {...variants('up', 0.1)}
+                            className={Style.item}
+                        >
                             <p>Contour</p>
                             <p>$15+</p>
-                        </div>
+                        </motion.div>
                     </div>
                     <div className={Style.items}>
-                        <div className={Style.item}>
+                        <motion.div
+                            {...variants('up', 0.1)}
+                            className={Style.item}
+                        >
                             <p>Sourcils</p>
                             <p>$10+</p>
-                        </div>
-                        <div className={Style.item}>
+                        </motion.div>
+                        <motion.div
+                            {...variants('up', 0.1)}
+                            className={Style.item}
+                        >
                             <p>Autres</p>
                             <p>Sur Demande</p>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
                 <ButtonSecondary path="#booking">
@@ -210,8 +258,13 @@ function SectionAbout() {
         <section className={Style.sectionAbout}>
             <div className={Style.aboutContainer}>
                 <div className={Style.textBox}>
-                    <h2 className={Style.title}>A Propos</h2>
-                    <p className={Style.text}>
+                    <motion.h2
+                        {...variants('right', 0.1)}
+                        className={Style.title}
+                    >
+                        A Propos
+                    </motion.h2>
+                    <motion.p {...variants('up', 0.1)} className={Style.text}>
                         Je mets un point d&apos;honneur à offrir bien plus
                         qu&apos;une simple coupe de cheveux. Je suis passionné
                         par mon métier et je m&apos;efforce constamment de
@@ -222,11 +275,13 @@ function SectionAbout() {
                         coiffure. Mon objectif est de vous aider à vous sentir
                         et à paraître au mieux, quel que soit le style que vous
                         choisissiez.
-                    </p>
-                    <p>Kerwens TELISME</p>
-                    <p>Barber</p>
+                    </motion.p>
+                    <motion.p {...variants('up', 0.3)}>
+                        Kerwens TELISME
+                    </motion.p>
+                    <motion.p {...variants('up', 0.3)}>Barber</motion.p>
                 </div>
-                <div className={Style.imgBox}>
+                <motion.div {...variants('up', 0)} className={Style.imgBox}>
                     <Image
                         src={Profile}
                         width={450}
@@ -234,7 +289,7 @@ function SectionAbout() {
                         alt="Propriétaier"
                         loading="eager"
                     />
-                </div>
+                </motion.div>
             </div>
         </section>
     );
