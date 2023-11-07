@@ -9,6 +9,7 @@
     cursor: pointer;
     color: #0f253e;
     transition: 0.3s all ease;
+    text-align: center;
     &:hover {
         background: none;
         color: var(--color-primary);
@@ -24,6 +25,7 @@
     font-weight: bold;
     transition: 0.3s all ease-in-out;
     background: none;
+    text-align: center;
     cursor: pointer;
     color: #2f4858;
     &:hover {

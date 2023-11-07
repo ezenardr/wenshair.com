@@ -1,9 +1,7 @@
 import Link from 'next/link';
-import Style from './page.module.scss';
 import Logo from '@/img/logo.png';
 import Qr from '@/img/qr-code.webp';
 import Why from '@/img/why-us.png';
-
 import Profile from '@/img/profile2.webp';
 import Image from 'next/image';
 import { FaPhone } from 'react-icons/fa6';
@@ -14,6 +12,7 @@ import { ButtonPrimary, ButtonSecondary } from '@/components/Buttons/Buttons';
 import ContactForm from '@/components/ContactForm/ContactForm';
 import Navigation from '@/components/Navigations/Navigation';
 import ImagesCarousel from '@/components/ImagesCarousel/ImagesCarousel';
+import Style from './page.module.scss';
 export default function Home() {
     return (
         <>
