@@ -38,6 +38,7 @@
     }
 }
 .sticky {
+    max-width: var(--container-xl);
     background-color: var(--color-dark);
     position: fixed;
     top: 0;
