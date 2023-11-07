@@ -22,7 +22,7 @@ export default function Navigation() {
                 />
             </Link>
             <ul className={`${Style.navList} ${isOpen && Style.isOpen}`}>
-                <li>
+                <li onClick={() => setIsOpen(false)}>
                     <Link
                         className={`${Style.navLink} ${Style.active}`}
                         href="/"
@@ -30,17 +30,17 @@ export default function Navigation() {
                         Accueil
                     </Link>
                 </li>
-                <li>
+                <li onClick={() => setIsOpen(false)}>
                     <Link className={Style.navLink} href="/gallery">
                         Gallery
                     </Link>
                 </li>
-                <li>
+                <li onClick={() => setIsOpen(false)}>
                     <Link className={Style.navLink} href="#pricing">
                         Pricing
                     </Link>
                 </li>
-                <li>
+                <li onClick={() => setIsOpen(false)}>
                     <ButtonPrimary path="#booking">Book Now</ButtonPrimary>
                 </li>
             </ul>
