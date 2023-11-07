@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ButtonPrimary } from '../Buttons/Buttons';
@@ -9,8 +9,18 @@ import { AiOutlineMenu } from 'react-icons/ai';
 
 export default function Navigation() {
     const [isOpen, setIsOpen] = useState<boolean>(false);
+    const [sticky, setSticky] = useState<boolean>(false);
+
+    function toggleScticky() {
+        if (window.scrollY > 50) setSticky(true);
+        else setSticky(false);
+    }
+    useEffect(function () {
+        document.addEventListener('scroll', toggleScticky);
+        return () => document.removeEventListener('scroll', toggleScticky);
+    }, []);
     return (
-        <nav className={Style.navigation}>
+        <nav className={`${Style.navigation} ${sticky && Style.sticky}`}>
             <Link href="/" className={Style.logoLink}>
                 <Image
                     className={Style.logo}

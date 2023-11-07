@@ -29,88 +29,93 @@ export default function Home() {
 
 function Header() {
     return (
-        <header className={Style.header}>
-            <Navigation />
-            <h1>
-                Premium <br /> <span className={Style.accent}>WensHair</span>{' '}
-                <br />
-                Barbershop
-            </h1>
-            <div className={Style.heroTextBox}>
-                <div className={Style.heroContentBox}>
-                    <p className={Style.contentTitle}>Rapide</p>
-                    <div className={Style.diamond}></div>
-                    <p className={Style.contentText}>
-                        Avec une expertise rapide, Soyez prêt à briller en un
-                        rien de temps.
-                    </p>
+        <>
+            <header className={Style.header}>
+                <Navigation />
+                <h1>
+                    Premium <br />{' '}
+                    <span className={Style.accent}>WensHair</span> <br />
+                    Barbershop
+                </h1>
+                <div className={Style.heroTextBox}>
+                    <div className={Style.heroContentBox}>
+                        <p className={Style.contentTitle}>Rapide</p>
+                        <div className={Style.diamond}></div>
+                        <p className={Style.contentText}>
+                            Avec une expertise rapide, Soyez prêt à briller en
+                            un rien de temps.
+                        </p>
+                    </div>
+                    <div className={Style.heroContentBox}>
+                        <p className={Style.contentTitle}>Cool</p>
+                        <div className={Style.diamond}></div>
+                        <p className={Style.contentText}>
+                            Le style est notre marque. Une ambiance
+                            décontractée, où l&apos;élégance est la norme.
+                        </p>
+                    </div>
+                    <div className={Style.heroContentBox}>
+                        <p className={Style.contentTitle}>Abordable</p>
+                        <div className={Style.diamond}></div>
+                        <p className={Style.contentText}>
+                            Le raffinement n&apos;a pas de prix.! Obtenez un
+                            look de star sans vider votre portefeuille.
+                        </p>
+                    </div>
                 </div>
-                <div className={Style.heroContentBox}>
-                    <p className={Style.contentTitle}>Cool</p>
-                    <div className={Style.diamond}></div>
-                    <p className={Style.contentText}>
-                        Le style est notre marque. Une ambiance décontractée, où
-                        l&apos;élégance est la norme.
-                    </p>
-                </div>
-                <div className={Style.heroContentBox}>
-                    <p className={Style.contentTitle}>Abordable</p>
-                    <div className={Style.diamond}></div>
-                    <p className={Style.contentText}>
-                        Le raffinement n&apos;a pas de prix.! Obtenez un look de
-                        star sans vider votre portefeuille.
-                    </p>
-                </div>
-            </div>
-            <div className={Style.contactBox}>
-                <div className={Style.contact}>
-                    <div className={Style.contactLogo}>
+                <div className={Style.contactBox}>
+                    <div className={Style.contact}>
+                        <div className={Style.contactLogo}>
+                            <Image
+                                className={Style.logo}
+                                src={Logo}
+                                alt="Logo"
+                                width={100}
+                                height={100}
+                                loading="eager"
+                            />
+                            <p className={Style.logoTitle}>Traveling Barber</p>
+                        </div>
+                        <div className={Style.infoBox}>
+                            <div className={Style.info}>
+                                <ImLocation2 className={Style.icon} />
+                                <p>Montréal, QC</p>
+                            </div>
+                            <Link
+                                href="tel:+1(514)5574194"
+                                className={Style.info}
+                            >
+                                <span className={Style.contactIcon}>
+                                    <FaPhone className={Style.icon} />
+                                </span>
+                                +1 (514) 557-4194
+                            </Link>
+                            <Link
+                                href="mailto:wenshair1@gmail.com"
+                                className={Style.info}
+                            >
+                                <span className={Style.contactIcon}>
+                                    <GrMail className={Style.icon} />
+                                </span>
+                                wenshair1@gmail.com
+                            </Link>
+                        </div>
+                    </div>
+                    <div className={Style.qrBox}>
                         <Image
-                            className={Style.logo}
-                            src={Logo}
-                            alt="Logo"
-                            width={100}
-                            height={100}
+                            src={Qr}
+                            alt="Qr code link"
+                            width={150}
+                            height={175}
                             loading="eager"
                         />
-                        <p className={Style.logoTitle}>Traveling Barber</p>
-                    </div>
-                    <div className={Style.infoBox}>
-                        <div className={Style.info}>
-                            <ImLocation2 className={Style.icon} />
-                            <p>Montréal, QC</p>
-                        </div>
-                        <Link href="tel:+1(514)5574194" className={Style.info}>
-                            <span className={Style.contactIcon}>
-                                <FaPhone className={Style.icon} />
-                            </span>
-                            +1 (514) 557-4194
-                        </Link>
-                        <Link
-                            href="mailto:wenshair1@gmail.com"
-                            className={Style.info}
-                        >
-                            <span className={Style.contactIcon}>
-                                <GrMail className={Style.icon} />
-                            </span>
-                            wenshair1@gmail.com
-                        </Link>
+                        <ButtonSecondary path="#booking">
+                            Réservation
+                        </ButtonSecondary>
                     </div>
                 </div>
-                <div className={Style.qrBox}>
-                    <Image
-                        src={Qr}
-                        alt="Qr code link"
-                        width={150}
-                        height={175}
-                        loading="eager"
-                    />
-                    <ButtonSecondary path="#booking">
-                        Réservation
-                    </ButtonSecondary>
-                </div>
-            </div>
-        </header>
+            </header>
+        </>
     );
 }
 function WhyUs() {

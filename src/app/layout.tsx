@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { playfair, poppins } from '@/styles/_fonts';
 import '@/styles/main.scss';
 import ScrollToTop from '@/components/ScrollToTop/ScrollToTop';
+import Navigation from '@/components/Navigations/Navigation';
 
 export const metadata: Metadata = {
     title: 'WensHair - Premium BarberShop',
@@ -22,6 +23,7 @@ export default function RootLayout({
                     'dark',
                 ].join(' ')}
             >
+                {/* <Navigation /> */}
                 {children}
                 <ScrollToTop />
             </body>

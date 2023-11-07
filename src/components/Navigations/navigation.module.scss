@@ -4,6 +4,7 @@
     justify-content: space-between;
     padding: var(--padding-xs);
     width: 100%;
+    transition: 0.3s all ease-in-out;
     .iconBox {
         display: none;
         .icon {
@@ -34,6 +35,25 @@
             color: var(--color-primary);
             border-bottom: 1px solid var(--color-primary);
         }
+    }
+}
+.sticky {
+    background-color: var(--color-dark);
+    position: fixed;
+    top: 0;
+    z-index: 1111;
+    animation-duration: 0.7s;
+    animation-name: fadeInDown;
+    animation-timing-function: ease-out;
+}
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 @media screen and (max-width: 768px) {
