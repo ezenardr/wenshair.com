@@ -12,7 +12,6 @@ export default function Navigation() {
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const [sticky, setSticky] = useState<boolean>(false);
     const pathName = usePathname();
-    console.log(pathName);
     function toggleScticky() {
         if (window.scrollY > 50) setSticky(true);
         else setSticky(false);

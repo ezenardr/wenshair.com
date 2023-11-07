@@ -222,7 +222,7 @@
                     p {
                         font-size: clamp(1.8rem, 2.8vw + 1rem, 2.8rem);
                         text-transform: uppercase;
-                        font-family: var(--font-family-secondary);
+                        font-family: var(--font-family-primary);
                         letter-spacing: 1.5px;
                         cursor: context-menu;
                         color: var(--color-brown);
@@ -286,7 +286,7 @@
                 font-size: clamp(1.8rem, 2vw + 1rem, 2rem);
                 color: var(--color-dark);
                 letter-spacing: 1.1px;
-                font-family: var(--font-family-secondary);
+                font-family: var(--font-family-primary);
                 padding-bottom: var(--padding-xs);
                 text-align: justify;
             }
