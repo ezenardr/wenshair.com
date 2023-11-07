@@ -1,0 +1,30 @@
+.carousel {
+    display: flex;
+    justify-content: space-between;
+    img:nth-child(odd) {
+        transform: rotate(10deg);
+    }
+    img:nth-child(even) {
+        transform: rotate(-10deg);
+    }
+    img {
+        transition: 0.3s all ease-in-out;
+        &:hover {
+            transform: rotate(0);
+            transform: scale(1.2);
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    .carousel {
+        flex-direction: column;
+        row-gap: var(--spacing-md);
+        align-items: center;
+        img:nth-child(odd) {
+            transform: rotate(0);
+        }
+        img:nth-child(even) {
+            transform: rotate(0);
+        }
+    }
+}

@@ -1,6 +1,5 @@
 'use client';
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import Style from './carousel.module.scss';
 import Image4 from '@/img/4.webp';
@@ -10,7 +9,7 @@ import Image12 from '@/img/12.webp';
 
 export default function ImagesCarousel() {
     return (
-        <div>
+        <div className={Style.carousel}>
             <Image
                 src={Image8}
                 width={250}
