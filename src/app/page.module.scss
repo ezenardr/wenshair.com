@@ -138,6 +138,7 @@
     align-items: center;
     gap: var(--spacing-md);
     padding-block: var(--padding-xl);
+    overflow-x: hidden;
     img {
         flex: 1;
         border-radius: 5px;
@@ -289,6 +290,9 @@
                 font-family: var(--font-family-primary);
                 padding-bottom: var(--padding-xs);
                 text-align: justify;
+                animation-duration: 0.7s;
+                animation-name: fadeInUp;
+                animation-timing-function: ease-out;
             }
             p:nth-child(3) {
                 font-size: 1.8rem;
