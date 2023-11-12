@@ -22,51 +22,53 @@ export default function Navigation() {
     }, []);
     return (
         <nav className={`${Style.navigation} ${sticky && Style.sticky}`}>
-            <Link href="/" className={Style.logoLink}>
-                <Image
-                    className={Style.logo}
-                    src={Logo}
-                    alt="Logo"
-                    width={75}
-                    height={75}
-                    loading="eager"
-                />
-            </Link>
-            <ul className={`${Style.navList} ${isOpen && Style.isOpen}`}>
-                <li onClick={() => setIsOpen(false)}>
-                    <Link
-                        className={`${Style.navLink} ${
-                            pathName === '/' ? Style.active : ''
-                        }`}
-                        href="/"
-                    >
-                        Accueil
-                    </Link>
-                </li>
-                <li onClick={() => setIsOpen(false)}>
-                    <Link
-                        className={`${Style.navLink} ${
-                            pathName === '/gallery' ? Style.active : ''
-                        }`}
-                        href="/gallery"
-                    >
-                        Gallery
-                    </Link>
-                </li>
-                <li onClick={() => setIsOpen(false)}>
-                    <Link className={Style.navLink} href="#pricing">
-                        Pricing
-                    </Link>
-                </li>
-                <li onClick={() => setIsOpen(false)}>
-                    <ButtonPrimary path="#booking">Book Now</ButtonPrimary>
-                </li>
-            </ul>
-            <div
-                className={Style.iconBox}
-                onClick={() => setIsOpen((prev) => !prev)}
-            >
-                <AiOutlineMenu className={Style.icon} />
+            <div className={Style.navContainer}>
+                <Link href="/" className={Style.logoLink}>
+                    <Image
+                        className={Style.logo}
+                        src={Logo}
+                        alt="Logo"
+                        width={75}
+                        height={75}
+                        loading="eager"
+                    />
+                </Link>
+                <ul className={`${Style.navList} ${isOpen && Style.isOpen}`}>
+                    <li onClick={() => setIsOpen(false)}>
+                        <Link
+                            className={`${Style.navLink} ${
+                                pathName === '/' ? Style.active : ''
+                            }`}
+                            href="/"
+                        >
+                            Accueil
+                        </Link>
+                    </li>
+                    <li onClick={() => setIsOpen(false)}>
+                        <Link
+                            className={`${Style.navLink} ${
+                                pathName === '/gallery' ? Style.active : ''
+                            }`}
+                            href="/gallery"
+                        >
+                            Gallery
+                        </Link>
+                    </li>
+                    <li onClick={() => setIsOpen(false)}>
+                        <Link className={Style.navLink} href="#pricing">
+                            Pricing
+                        </Link>
+                    </li>
+                    <li onClick={() => setIsOpen(false)}>
+                        <ButtonPrimary path="#booking">Book Now</ButtonPrimary>
+                    </li>
+                </ul>
+                <div
+                    className={Style.iconBox}
+                    onClick={() => setIsOpen((prev) => !prev)}
+                >
+                    <AiOutlineMenu className={Style.icon} />
+                </div>
             </div>
         </nav>
     );

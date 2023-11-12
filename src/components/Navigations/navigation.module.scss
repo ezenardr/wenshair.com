@@ -1,44 +1,50 @@
 .navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: var(--padding-xs);
     width: 100%;
     transition: 0.3s all ease-in-out;
-    .iconBox {
-        display: none;
-        .icon {
-            font-size: 2.8rem;
-            color: var(--color-white);
-        }
-    }
-    .navList {
+    .navContainer {
         display: flex;
         align-items: center;
-        gap: 3.8rem;
-        .navLink,
-        .navLink:link {
-            font-size: 1.8rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-family: var(--font-family-primary);
-            font-weight: 300;
-            color: #fff;
-            padding: 0 5px 5px 5px;
-            transition: 0.3s all ease-in-out;
-            &:hover {
+        justify-content: space-between;
+        max-width: var(--container-xl);
+        margin-inline: auto;
+        padding: var(--padding-xs);
+        .iconBox {
+            display: none;
+            .icon {
+                font-size: 2.8rem;
+                color: var(--color-white);
+            }
+        }
+        .navList {
+            display: flex;
+            align-items: center;
+            gap: 3.8rem;
+            .navLink,
+            .navLink:link {
+                font-size: 1.8rem;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-family: var(--font-family-primary);
+                font-weight: 300;
+                color: #fff;
+                padding: 0 5px 5px 5px;
+                transition: 0.3s all ease-in-out;
+                &:hover {
+                    color: var(--color-primary);
+                    border-bottom: 1px solid var(--color-primary);
+                }
+            }
+            .active {
                 color: var(--color-primary);
                 border-bottom: 1px solid var(--color-primary);
             }
         }
-        .active {
-            color: var(--color-primary);
-            border-bottom: 1px solid var(--color-primary);
-        }
     }
 }
 .sticky {
-    max-width: var(--container-xl);
+    .navContainer {
+        max-width: var(--container-xl);
+    }
     background-color: var(--color-dark);
     position: fixed;
     top: 0;

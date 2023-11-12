@@ -134,48 +134,52 @@
 }
 .sectionWhyUs {
     background-color: var(--color-dark);
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-md);
     padding-block: var(--padding-xl);
     overflow-x: hidden;
-    img {
-        flex: 1;
-        border-radius: 5px;
-    }
-    .textBox {
-        flex: 1;
+    .whyUsContainer {
+        max-width: var(--container-xl);
+        margin-inline: auto;
         display: flex;
         align-items: center;
-        flex-direction: column;
-        .title {
-            text-transform: uppercase;
-            font-family: var(--font-family-primary);
-            letter-spacing: 1.5px;
-            padding-bottom: var(--spacing-sm);
+        gap: var(--spacing-md);
+        img {
+            flex: 1;
+            border-radius: 5px;
         }
-        ul {
+        .textBox {
+            flex: 1;
             display: flex;
+            align-items: center;
             flex-direction: column;
-            gap: var(--spacing-xxs);
-            padding-bottom: var(--spacing-sm);
-            li {
+            .title {
+                text-transform: uppercase;
+                font-family: var(--font-family-primary);
+                letter-spacing: 1.5px;
+                padding-bottom: var(--spacing-sm);
+            }
+            ul {
                 display: flex;
-                align-items: center;
-                gap: var(--spacing-xs);
-                cursor: context-menu;
-                transition: 0.3s all ease-in-out;
-                &:hover {
-                    transform: translateX(2%);
-                }
-                .icon {
-                    font-size: 3.8rem;
-                    color: var(--color-primary);
-                }
-                p {
-                    font-size: clamp(1.6rem, 1.8vw + 1rem, 1.8rem);
-                    letter-spacing: 1.2px;
-                    color: var(--gray-300);
+                flex-direction: column;
+                gap: var(--spacing-xxs);
+                padding-bottom: var(--spacing-sm);
+                li {
+                    display: flex;
+                    align-items: center;
+                    gap: var(--spacing-xs);
+                    cursor: context-menu;
+                    transition: 0.3s all ease-in-out;
+                    &:hover {
+                        transform: translateX(2%);
+                    }
+                    .icon {
+                        font-size: 3.8rem;
+                        color: var(--color-primary);
+                    }
+                    p {
+                        font-size: clamp(1.6rem, 1.8vw + 1rem, 1.8rem);
+                        letter-spacing: 1.2px;
+                        color: var(--gray-300);
+                    }
                 }
             }
         }

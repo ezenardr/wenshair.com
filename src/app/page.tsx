@@ -154,35 +154,40 @@ function WhyUs() {
     ];
     return (
         <section className={Style.sectionWhyUs}>
-            <motion.div {...variants('right', 0)}>
-                <Image
-                    alt="man getting facial"
-                    src={Why}
-                    width={700}
-                    height={500}
-                    loading="eager"
-                />
-            </motion.div>
-            <div className={Style.textBox}>
-                <motion.h2 {...variants('left', 0.1)} className={Style.title}>
-                    Raison de me Préférer?
-                </motion.h2>
-                <ul className={Style.textList}>
-                    {reasons.map((reason) => {
-                        return (
-                            <motion.li
-                                {...variants('left', 0.2)}
-                                key={Math.random()}
-                            >
-                                <MdArrowRight className={Style.icon} />
-                                <p>{reason}</p>
-                            </motion.li>
-                        );
-                    })}
-                </ul>
-                <ButtonPrimary path="#booking">
-                    Faites Votre Réservation !
-                </ButtonPrimary>
+            <div className={Style.whyUsContainer}>
+                <motion.div {...variants('right', 0)}>
+                    <Image
+                        alt="man getting facial"
+                        src={Why}
+                        width={700}
+                        height={500}
+                        loading="eager"
+                    />
+                </motion.div>
+                <div className={Style.textBox}>
+                    <motion.h2
+                        {...variants('left', 0.1)}
+                        className={Style.title}
+                    >
+                        Raison de me Préférer?
+                    </motion.h2>
+                    <ul className={Style.textList}>
+                        {reasons.map((reason) => {
+                            return (
+                                <motion.li
+                                    {...variants('left', 0.2)}
+                                    key={Math.random()}
+                                >
+                                    <MdArrowRight className={Style.icon} />
+                                    <p>{reason}</p>
+                                </motion.li>
+                            );
+                        })}
+                    </ul>
+                    <ButtonPrimary path="#booking">
+                        Faites Votre Réservation !
+                    </ButtonPrimary>
+                </div>
             </div>
         </section>
     );
