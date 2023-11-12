@@ -172,15 +172,14 @@ function WhyUs() {
                         Raison de me Préférer?
                     </motion.h2>
                     <ul className={Style.textList}>
-                        {reasons.map((reason) => {
+                        {reasons.map((reason, i) => {
                             return (
-                                <motion.li
-                                    {...variants('left', 0.2)}
-                                    key={Math.random()}
-                                >
+                                <li key={i + 1}>
                                     <MdArrowRight className={Style.icon} />
-                                    <p>{reason}</p>
-                                </motion.li>
+                                    <motion.p {...variants('left', 0.2)}>
+                                        {reason}
+                                    </motion.p>
+                                </li>
                             );
                         })}
                     </ul>
