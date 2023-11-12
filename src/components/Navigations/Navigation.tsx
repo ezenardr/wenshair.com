@@ -44,7 +44,7 @@ export default function Navigation() {
                             Accueil
                         </Link>
                     </li>
-                    <li onClick={() => setIsOpen(false)}>
+                    {/* <li onClick={() => setIsOpen(false)}>
                         <Link
                             className={`${Style.navLink} ${
                                 pathName === '/gallery' ? Style.active : ''
@@ -53,7 +53,7 @@ export default function Navigation() {
                         >
                             Gallery
                         </Link>
-                    </li>
+                    </li> */}
                     <li onClick={() => setIsOpen(false)}>
                         <Link className={Style.navLink} href="#pricing">
                             Pricing

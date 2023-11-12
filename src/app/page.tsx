@@ -252,7 +252,7 @@ function GallerySection() {
             <div className={Style.galleryContainer}>
                 <h2 className={Style.title}>Mes Réalisations</h2>
                 <ImagesCarousel />
-                <ButtonPrimary path="/gallery">Voir Plus</ButtonPrimary>
+                {/* <ButtonPrimary path="/gallery">Voir Plus</ButtonPrimary> */}
             </div>
         </section>
     );
