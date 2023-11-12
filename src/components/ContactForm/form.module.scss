@@ -21,6 +21,9 @@
                 color: #bdb8b8;
                 font-size: 1.2rem;
             }
+            &:focus {
+                border-color: var(--color-primary);
+            }
         }
         label {
             position: absolute;
