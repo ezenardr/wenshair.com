@@ -5,6 +5,7 @@ export async function POST(req: NextRequest) {
     //mail credential
     const username = process.env.NEXT_PUBLIC_EMAIL_USERNAME;
     const password = process.env.NEXT_PUBLIC_EMAIL_PASSWORD;
+    const barber = process.env.NEXT_PUBLIC_EMAIL_BARBER;
 
     //request data
     const { name, email, number, option, dateFormat } = await req.json();
@@ -26,7 +27,7 @@ export async function POST(req: NextRequest) {
     try {
         const mail = await transporter.sendMail({
             from: username,
-            to: 'ezenardr.dev@gmail.com',
+            to: barber,
             subject: `Nouvelle réservation pour Wens-Hair`,
             html: `
             <h1 style="text-align : center">Nouvelle Réservation</h1>
