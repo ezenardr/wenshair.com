@@ -140,6 +140,12 @@
             input[value='contour']:checked ~ label {
                 color: var(--color-primary);
             }
+            input[value='autres']:checked {
+                border-color: var(--color-primary);
+            }
+            input[value='autres']:checked ~ label {
+                color: var(--color-primary);
+            }
             .label {
                 color: var(--color-white);
                 position: absolute;
