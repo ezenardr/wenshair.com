@@ -6,6 +6,7 @@ import { Toaster } from 'sonner';
 
 export const metadata: Metadata = {
     title: 'WensHair - Premium BarberShop',
+    metadataBase: new URL('https://wenshair.com'),
     description: 'Votre solution en matière de coiffure',
     verification: {
         google: 'FpHEu-Ne6e05onWPJYr6-MYdKktelhNnFTf0JYXXq4k',
