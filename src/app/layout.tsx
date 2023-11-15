@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: 'WensHair - Premium BarberShop',
     description: 'Votre solution en matière de coiffure',
     verification: {
-        google: 'google-site-verification=FpHEu-Ne6e05onWPJYr6-MYdKktelhNnFTf0JYXXq4k',
+        google: 'FpHEu-Ne6e05onWPJYr6-MYdKktelhNnFTf0JYXXq4k',
     },
 };
 
