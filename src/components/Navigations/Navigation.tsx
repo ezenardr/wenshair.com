@@ -63,12 +63,10 @@ export default function Navigation() {
                         <ButtonPrimary path="#booking">Book Now</ButtonPrimary>
                     </li>
                 </ul>
-                <div
-                    className={Style.iconBox}
+                <AiOutlineMenu
                     onClick={() => setIsOpen((prev) => !prev)}
-                >
-                    <AiOutlineMenu className={Style.icon} />
-                </div>
+                    className={Style.icon}
+                />
             </div>
         </nav>
     );

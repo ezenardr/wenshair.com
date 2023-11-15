@@ -8,12 +8,10 @@
         max-width: var(--container-xl);
         margin-inline: auto;
         padding: var(--padding-xs);
-        .iconBox {
+        .icon {
+            font-size: 2.8rem;
+            color: var(--color-white);
             display: none;
-            .icon {
-                font-size: 2.8rem;
-                color: var(--color-white);
-            }
         }
         .navList {
             display: flex;
@@ -63,10 +61,10 @@
         transform: translateY(0);
     }
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .navigation {
-        .iconBox {
-            display: block;
+        .icon {
+            display: block !important;
         }
         background-color: var(--color-dark);
         .navList {
