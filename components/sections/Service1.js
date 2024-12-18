@@ -1,6 +1,5 @@
 'use client'
 import { useState } from 'react'
-import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 export default function Service1() {
     const [isAccordion, setIsAccordion] = useState(1)
@@ -9,20 +8,19 @@ export default function Service1() {
     }
     return (
         <>
-
             <section className="service-section pt-space pb-space">
                 <div className="container position-relative">
                     <div className="d-flex align-items-center justify-content-between flex-wrap gap-5 mb-xxl-17 mb-xl-12 mb-lg-10 mb-md-10 mb-sm-10 mb-9">
                         <div className="pricing-title">
                             <div className="radius-btn text-uppercase cmn-border d-inline-flex radius100 py-xxl-2 py-2 px-xxl-4 px-4 theme-clr gap-xxl-4 gap-3 mb-xxl-8 mb-xl-6 mb-5">
-                                WHAT WE OFFER
+                                Ce que nous offrons
                             </div>
                             <h2 className="stitle">
-                                Most <span className="fw-400">experienced</span> services
+                                <span className="fw-400">Services</span> d’Excellence
                             </h2>
                         </div>
-                        <Link href="/service" className="radius-btn d-inline-flex radius100 py-xxl-2 py-2 px-xxl-5 px-5 theme-border theme-clr gap-xxl-4 gap-3 mb-xxl-8 mb-xl-6 mb-5 style-2">
-                            View All Service
+                        <Link href={"/service"} className="radius-btn d-inline-flex radius100 py-xxl-2 py-2 px-xxl-5 px-5 theme-border theme-clr gap-xxl-4 gap-3 mb-xxl-8 mb-xl-6 mb-5 style-2">
+                            Voir tout nos services
                             <span className="rot60 d-inline-block">
                                 <i className="fas fa-arrow-up theme-clr" />
                             </span>
@@ -42,29 +40,27 @@ export default function Service1() {
                                                 </span>
                                             </span>
                                             <span className="mtitle d-block mt-6">
-                                                <Link href="/service-details" className="white-clr whitehover">
-                                                    Digitalization
+                                                <Link href={"/service-details"} className="white-clr whitehover">
+                                                    Coupes de cheveux
                                                 </Link>
                                             </span>
                                             <span className="pras mt-xxl-7 mt-xl-5 mt-4 d-block">
-                                                We build intelligent next-generation solutions at the intersection of new
-                                                business opportunities and technological
-                                                innovations.
+                                                Que vous soyez à la recherche d'une coupe tendance ou d'un rafraîchissement rapide, nous proposons des coupes modernes, classiques ou personnalisées, adaptées à chaque style.
                                             </span>
                                         </div>
                                         <div className="images-remove-area d-lg-flex d-none align-items-center gap-xxl-8 gap-4">
                                             <ul className="modern-list d-grid gap-2">
                                                 <li className="d-flex align-items-center gap-2">
-                                                    <i className="fas fa-chevron-right" /> Legacy Modernization
+                                                    <i className="fas fa-chevron-right" /> Adaptabilité
                                                 </li>
                                                 <li className="d-flex align-items-center gap-2">
-                                                    <i className="fas fa-chevron-right" /> Solution Design
+                                                    <i className="fas fa-chevron-right" /> Précision
                                                 </li>
                                                 <li className="d-flex align-items-center gap-2">
-                                                    <i className="fas fa-chevron-right" /> Technology Enabling
+                                                    <i className="fas fa-chevron-right" /> Confort
                                                 </li>
                                                 <li className="d-flex align-items-center gap-2">
-                                                    <i className="fas fa-chevron-right" /> Mobile-First Systems
+                                                    <i className="fas fa-chevron-right" /> Durabilité
                                                 </li>
                                             </ul>
                                             <div className="tab-remove-thumb">
@@ -86,28 +82,26 @@ export default function Service1() {
                                             </span>
                                             <span className="mtitle d-block mt-6">
                                                 <Link href="/service-details" className="white-clr whitehover">
-                                                    Modernization
+                                                    Coupe et taille de barbe
                                                 </Link>
                                             </span>
                                             <span className="pras mt-xxl-7 mt-xl-5 mt-4 d-block">
-                                                We build intelligent next-generation solutions at the intersection of new
-                                                business opportunities and technological
-                                                innovations.
+                                                Offrez à votre barbe l'attention qu'elle mérite. Que ce soit pour une taille nette, un contour précis ou une coupe complète, nous utiliserons des techniques adaptées à la texture de votre barbe et à vos préférences personnelles.
                                             </span>
                                         </div>
                                         <div className="images-remove-area d-lg-flex d-none align-items-center gap-xxl-8 gap-4">
                                             <ul className="modern-list d-grid gap-2">
                                                 <li className="d-flex align-items-center gap-2">
-                                                    <i className="fas fa-chevron-right" /> Legacy Modernization
+                                                    <i className="fas fa-chevron-right" /> Précision
                                                 </li>
                                                 <li className="d-flex align-items-center gap-2">
-                                                    <i className="fas fa-chevron-right" /> Solution Design
+                                                    <i className="fas fa-chevron-right" /> Confort
                                                 </li>
                                                 <li className="d-flex align-items-center gap-2">
-                                                    <i className="fas fa-chevron-right" /> Technology Enabling
+                                                    <i className="fas fa-chevron-right" /> Adaptabilité
                                                 </li>
                                                 <li className="d-flex align-items-center gap-2">
-                                                    <i className="fas fa-chevron-right" /> Mobile-First Systems
+                                                    <i className="fas fa-chevron-right" /> Soin
                                                 </li>
                                             </ul>
                                             <div className="tab-remove-thumb">
@@ -129,28 +123,26 @@ export default function Service1() {
                                             </span>
                                             <span className="mtitle d-block mt-6">
                                                 <Link href="/service-details" className="white-clr whitehover">
-                                                    Accelerating Innovation
+                                                    Coiffure enfant
                                                 </Link>
                                             </span>
                                             <span className="pras mt-xxl-7 mt-xl-5 mt-4 d-block">
-                                                We build intelligent next-generation solutions at the intersection of new
-                                                business opportunities and technological
-                                                innovations.
+                                                Les coupes de cheveux pour enfants ne sont pas seulement une question de style, mais aussi de confort et de fun ! Nous offrons un service doux et attentionné pour que votre petit se sente à l'aise.
                                             </span>
                                         </div>
                                         <div className="images-remove-area d-lg-flex d-none align-items-center gap-xxl-8 gap-4">
                                             <ul className="modern-list d-grid gap-2">
                                                 <li className="d-flex align-items-center gap-2">
-                                                    <i className="fas fa-chevron-right" /> Legacy Modernization
+                                                    <i className="fas fa-chevron-right" /> Détente
                                                 </li>
                                                 <li className="d-flex align-items-center gap-2">
-                                                    <i className="fas fa-chevron-right" /> Solution Design
+                                                    <i className="fas fa-chevron-right" /> Sécurité
                                                 </li>
                                                 <li className="d-flex align-items-center gap-2">
-                                                    <i className="fas fa-chevron-right" /> Technology Enabling
+                                                    <i className="fas fa-chevron-right" /> Créativité
                                                 </li>
                                                 <li className="d-flex align-items-center gap-2">
-                                                    <i className="fas fa-chevron-right" /> Mobile-First Systems
+                                                    <i className="fas fa-chevron-right" /> Rapidité
                                                 </li>
                                             </ul>
                                             <div className="tab-remove-thumb">
@@ -172,28 +164,26 @@ export default function Service1() {
                                             </span>
                                             <span className="mtitle d-block mt-6">
                                                 <Link href="/service-details" className="white-clr whitehover">
-                                                    Business consulting
+                                                    Entretien et retouches
                                                 </Link>
                                             </span>
                                             <span className="pras mt-xxl-7 mt-xl-5 mt-4 d-block">
-                                                We build intelligent next-generation solutions at the intersection of new
-                                                business opportunities and technological
-                                                innovations.
+                                                Vous souhaitez garder votre coiffure au top entre deux visites ? Notre service d'entretien et de retouches est conçu pour vous aider à maintenir votre look parfait.
                                             </span>
                                         </div>
                                         <div className="images-remove-area d-lg-flex d-none align-items-center gap-xxl-8 gap-4">
                                             <ul className="modern-list d-grid gap-2">
                                                 <li className="d-flex align-items-center gap-2">
-                                                    <i className="fas fa-chevron-right" /> Legacy Modernization
+                                                    <i className="fas fa-chevron-right" /> Précision
                                                 </li>
                                                 <li className="d-flex align-items-center gap-2">
-                                                    <i className="fas fa-chevron-right" /> Solution Design
+                                                    <i className="fas fa-chevron-right" /> Rafraîchissement
                                                 </li>
                                                 <li className="d-flex align-items-center gap-2">
-                                                    <i className="fas fa-chevron-right" /> Technology Enabling
+                                                    <i className="fas fa-chevron-right" /> Commodité
                                                 </li>
                                                 <li className="d-flex align-items-center gap-2">
-                                                    <i className="fas fa-chevron-right" /> Mobile-First Systems
+                                                    <i className="fas fa-chevron-right" /> Soutien
                                                 </li>
                                             </ul>
                                             <div className="tab-remove-thumb">

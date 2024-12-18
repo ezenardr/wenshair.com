@@ -24,7 +24,7 @@ export default function BackToTop({ target }) {
         <>
             {hasScrolled && (
                 <div id="progress" onClick={handleClick} style={{display:"grid"}}>
-                    <span id="valiu"><i class="fas fa-arrow-up"></i></span>
+                    <span id="valiu"><i className="fas fa-arrow-up"></i></span>
                 </div>
             )}
         </>

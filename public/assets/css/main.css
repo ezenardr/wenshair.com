@@ -13,7 +13,7 @@ Version: 1.0.0
   --black: #000;
   --white: #fff;
   --spantext: #757575;
-  --theme: #e3ff04;
+  --theme: #f2d129;
   --bg1: #161616;
   --bg2: #1b1b1b;
   --bg3: #fff;
@@ -1243,7 +1243,10 @@ footer {
 }
 
 .hero-section-version1 {
-  background: url(../img/banner/hero-bg1.png) no-repeat center center;
+  background:
+          linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
+          url(../img/banner/hero-bg.webp) no-repeat center center;
+  /*background: url(../img/banner/hero-bg.webp) no-repeat center center;*/
   background-size: cover;
   padding: 290px 5px 30px;
   z-index: 1;
@@ -4510,7 +4513,7 @@ input.main-search-input::placeholder {
 }
 
 .watch-version01 {
-  background: url(../img/team/watch-bg01.png) no-repeat center center;
+  background: url(../img/team/watch-bg01.jpg) no-repeat center center;
   background-size: cover;
   padding: 300px 5px;
   background-attachment: fixed;

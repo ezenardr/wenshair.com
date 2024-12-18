@@ -11,7 +11,7 @@ export default function Footer1() {
                             <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
                                 <div className="footer-widget">
                                     <h5 className="footer-title mb-xxl-7 mb-xl-6 mb-5" data-aos="zoom-in-down" data-aos-duration={1900}>
-                                        About Us
+                                        A Propos
                                         <svg className="d-block mt-xxl-4 mt-3" width={83} height={2} viewBox="0 0 83 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <line y1={-1} x2={83} y2={-1} transform="matrix(1 0 0 -1 0 0)" stroke="url(#paint0_linear_6308_4304)" strokeWidth={2} />
                                             <defs>
@@ -23,45 +23,28 @@ export default function Footer1() {
                                         </svg>
                                     </h5>
                                     <p className="pra-clr mb-xxl-7 mb-6" data-aos="zoom-in" data-aos-duration={1600}>
-                                        Phasellus ultricies aliquam volutpat ullamcorper laoreet neque, a lacinia curabitur
-                                        lacinia mollis
+                                        Plus qu'un simple salon, nous sommes un lieu où vous pouvez vous détendre, prendre soin de vous et repartir avec une confiance renouvelée.
                                     </p>
                                     <ul className="common-social d-flex align-items-center gap-2">
                                         <li data-aos="zoom-in-right" data-aos-duration={1400}>
-                                            <Link href="/#" className="d-center">
-                                                <svg width={10} height={16} viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <g opacity="0.8" clipPath="url(#clip0_6308_28)">
-                                                        <path d="M8.72266 9L9.16703 6.10437H6.38859V4.22531C6.38859 3.43313 6.77672 2.66094 8.02109 2.66094H9.28422V0.195625C9.28422 0.195625 8.13797 0 7.04203 0C4.75391 0 3.25828 1.38688 3.25828 3.8975V6.10437H0.714844V9H3.25828V16H6.38859V9H8.72266Z" fill="white" />
-                                                    </g>
-                                                    <defs>
-                                                        <clipPath id="clip0_6308_28">
-                                                            <rect width={10} height={16} fill="white" />
-                                                        </clipPath>
-                                                    </defs>
+                                            <Link href="https://www.instagram.com/wenshair/" target={"_blank"}  className="d-center">
+                                                <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10.9995 0.590942C8.03687 0.590942 7.66507 0.603897 6.50147 0.656852C5.34014 0.710033 4.54744 0.893897 3.85382 1.16367C3.13634 1.44231 2.52772 1.81503 1.92138 2.42162C1.31458 3.02799 0.941863 3.63662 0.662326 4.3539C0.39188 5.04776 0.207795 5.84071 0.155523 7.00162C0.10348 8.16526 0.0898438 8.53731 0.0898438 11.5C0.0898438 14.4628 0.103025 14.8334 0.155751 15.9971C0.209159 17.1584 0.393016 17.9512 0.662554 18.6448C0.941409 19.3623 1.31412 19.9709 1.9207 20.5773C2.52682 21.1841 3.13543 21.5578 3.85246 21.8364C4.54653 22.1062 5.33946 22.29 6.50056 22.3432C7.66416 22.3962 8.03574 22.4091 10.9981 22.4091C13.961 22.4091 14.3317 22.3962 15.4953 22.3432C16.6566 22.29 17.4502 22.1062 18.1443 21.8364C18.8615 21.5578 19.4693 21.1841 20.0754 20.5773C20.6822 19.9709 21.0549 19.3623 21.3344 18.645C21.6026 17.9512 21.7867 17.1582 21.8412 15.9973C21.8935 14.8337 21.9071 14.4628 21.9071 11.5C21.9071 8.53731 21.8935 8.16549 21.8412 7.00185C21.7867 5.84049 21.6026 5.04776 21.3344 4.35412C21.0549 3.63662 20.6822 3.02799 20.0754 2.42162C19.4686 1.81481 18.8618 1.44208 18.1436 1.16367C17.4482 0.893897 16.655 0.710033 15.4937 0.656852C14.3301 0.603897 13.9597 0.590942 10.9961 0.590942H10.9995ZM10.0209 2.55685C10.3114 2.5564 10.6354 2.55685 10.9995 2.55685C13.9122 2.55685 14.2574 2.56731 15.4076 2.61958C16.4712 2.66822 17.0484 2.84594 17.433 2.99526C17.942 3.19299 18.305 3.42935 18.6866 3.81117C19.0684 4.19299 19.3047 4.55662 19.5029 5.06571C19.6522 5.44981 19.8302 6.02708 19.8786 7.09071C19.9308 8.24071 19.9422 8.58617 19.9422 11.4975C19.9422 14.4089 19.9308 14.7543 19.8786 15.9043C19.8299 16.968 19.6522 17.5453 19.5029 17.9293C19.3052 18.4384 19.0684 18.8009 18.6866 19.1825C18.3047 19.5644 17.9423 19.8007 17.433 19.9984C17.0489 20.1484 16.4712 20.3257 15.4076 20.3743C14.2576 20.4266 13.9122 20.438 10.9995 20.438C8.08665 20.438 7.74143 20.4266 6.59146 20.3743C5.52786 20.3253 4.95061 20.1475 4.56584 19.9982C4.05677 19.8005 3.69314 19.5641 3.31134 19.1823C2.92953 18.8005 2.69317 18.4378 2.495 17.9284C2.34568 17.5443 2.16774 16.9671 2.11933 15.9034C2.06706 14.7534 2.0566 14.408 2.0566 11.4948C2.0566 8.58162 2.06706 8.23799 2.11933 7.08799C2.16796 6.02435 2.34568 5.44708 2.495 5.06253C2.69272 4.55344 2.92953 4.18981 3.31134 3.80799C3.69314 3.42617 4.05677 3.18981 4.56584 2.99162C4.95038 2.84162 5.52786 2.66435 6.59146 2.61549C7.5978 2.57003 7.98779 2.5564 10.0209 2.55412V2.55685ZM16.8225 4.36821C16.0998 4.36821 15.5135 4.9539 15.5135 5.67685C15.5135 6.39958 16.0998 6.98594 16.8225 6.98594C17.5452 6.98594 18.1316 6.39958 18.1316 5.67685C18.1316 4.95412 17.5452 4.36776 16.8225 4.36776V4.36821ZM10.9995 5.89776C7.90574 5.89776 5.39741 8.40617 5.39741 11.5C5.39741 14.5939 7.90574 17.1012 10.9995 17.1012C14.0933 17.1012 16.6007 14.5939 16.6007 11.5C16.6007 8.40617 14.0931 5.89776 10.9993 5.89776H10.9995ZM10.9995 7.86367C13.0076 7.86367 14.6358 9.49162 14.6358 11.5C14.6358 13.5082 13.0076 15.1364 10.9995 15.1364C8.99116 15.1364 7.36326 13.5082 7.36326 11.5C7.36326 9.49162 8.99116 7.86367 10.9995 7.86367Z"
+                                                        fill="white"/>
                                                 </svg>
                                             </Link>
                                         </li>
                                         <li data-aos="zoom-in-right" data-aos-duration={1600}>
                                             <Link href="/#" className="d-center">
-                                                <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M14.3553 4.74149C14.3655 4.88362 14.3655 5.02577 14.3655 5.1679C14.3655 9.5029 11.066 14.4978 5.03553 14.4978C3.17766 14.4978 1.45178 13.9597 0 13.0258C0.263969 13.0562 0.51775 13.0664 0.791875 13.0664C2.32484 13.0664 3.73603 12.5486 4.86294 11.6654C3.42131 11.6349 2.21319 10.6907 1.79694 9.39124C2 9.42168 2.20303 9.44199 2.41625 9.44199C2.71066 9.44199 3.00509 9.40137 3.27919 9.33034C1.77666 9.02574 0.649719 7.70596 0.649719 6.11205V6.07146C1.08625 6.31512 1.59391 6.4674 2.13194 6.48768C1.24869 5.89884 0.670031 4.89377 0.670031 3.75671C0.670031 3.14759 0.832437 2.58921 1.11672 2.1019C2.73094 4.09174 5.15734 5.39121 7.87812 5.53337C7.82737 5.28971 7.79691 5.03593 7.79691 4.78212C7.79691 2.97499 9.25884 1.50293 11.0761 1.50293C12.0202 1.50293 12.873 1.89887 13.472 2.53846C14.2131 2.39634 14.9238 2.12221 15.5532 1.74659C15.3096 2.50802 14.7918 3.14762 14.1116 3.55368C14.7715 3.48265 15.4111 3.29987 15.9999 3.04609C15.5533 3.6958 14.9949 4.27446 14.3553 4.74149V4.74149Z" fill="white" />
+                                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M7.48733 17.0737C9.15607 17.0737 10.5089 15.879 10.5089 14.0521V0.5H14.1325C13.9293 2.97153 16.3862 5.35897 19.0958 5.30437V8.71184C16.7785 8.71184 14.8081 7.73201 14.1222 7.18824V14.0521C14.1222 17.0737 11.7452 20.5 7.48733 20.5C3.22942 20.5 0.904297 17.0737 0.904297 14.0521C0.904297 9.78751 5.41734 7.3142 8.40643 7.91871V11.3894C8.25606 11.3362 7.86828 11.2576 7.53798 11.2576C5.85537 11.1955 4.4658 12.5602 4.4658 14.0521C4.4658 15.7209 5.81858 17.0737 7.48733 17.0737Z"
+                                                        fill="white"/>
                                                 </svg>
-                                            </Link>
-                                        </li>
-                                        <li data-aos="zoom-in-right" data-aos-duration={1800}>
-                                            <Link href="/#" className="d-center">
-                                                <svg width={14} height={16} viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <g opacity="0.8">
-                                                        <path d="M3.13375 13.9997H0.23125V4.65281H3.13375V13.9997ZM1.68094 3.37781C0.752813 3.37781 0 2.60906 0 1.68094C6.64312e-09 1.23513 0.177098 0.807572 0.492335 0.492335C0.807572 0.177098 1.23513 0 1.68094 0C2.12675 0 2.5543 0.177098 2.86954 0.492335C3.18478 0.807572 3.36188 1.23513 3.36188 1.68094C3.36188 2.60906 2.60875 3.37781 1.68094 3.37781ZM13.9969 13.9997H11.1006V9.44969C11.1006 8.36531 11.0787 6.97469 9.59156 6.97469C8.0825 6.97469 7.85125 8.15281 7.85125 9.37156V13.9997H4.95188V4.65281H7.73562V5.92781H7.77625C8.16375 5.19344 9.11031 4.41844 10.5225 4.41844C13.46 4.41844 14 6.35281 14 8.86531V13.9997H13.9969Z" fill="white" />
-                                                    </g>
-                                                </svg>
-                                            </Link>
-                                        </li>
-                                        <li data-aos="zoom-in-right" data-aos-duration={1900}>
-                                            <Link href="/#" className="d-center">
-                                                <svg width={18} height={12} viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M17.1769 1.87759C16.9806 1.13853 16.4023 0.556469 15.668 0.358938C14.337 0 9.00014 0 9.00014 0C9.00014 0 3.66327 0 2.3323 0.358938C1.59802 0.5565 1.0197 1.13853 0.823422 1.87759C0.466797 3.21719 0.466797 6.01213 0.466797 6.01213C0.466797 6.01213 0.466797 8.80706 0.823422 10.1467C1.0197 10.8857 1.59802 11.4435 2.3323 11.6411C3.66327 12 9.00014 12 9.00014 12C9.00014 12 14.337 12 15.668 11.6411C16.4023 11.4435 16.9806 10.8857 17.1769 10.1467C17.5335 8.80706 17.5335 6.01213 17.5335 6.01213C17.5335 6.01213 17.5335 3.21719 17.1769 1.87759V1.87759ZM7.25467 8.54972V3.47453L11.7153 6.01219L7.25467 8.54972V8.54972Z" fill="white" />
-                                                </svg>
+
                                             </Link>
                                         </li>
                                     </ul>
@@ -70,7 +53,7 @@ export default function Footer1() {
                             <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-6">
                                 <div className="footer-widget">
                                     <h5 className="footer-title mb-xxl-7 mb-xl-6 mb-5" data-aos="zoom-in-down" data-aos-duration={1900}>
-                                        Quick Links
+                                        Liens Rapides
                                         <svg className="d-block mt-xxl-4 mt-3" width={83} height={2} viewBox="0 0 83 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <line y1={-1} x2={83} y2={-1} transform="matrix(1 0 0 -1 0 0)" stroke="url(#paint0_linear_6308_4304)" strokeWidth={2} />
                                             <defs>
@@ -83,35 +66,35 @@ export default function Footer1() {
                                     </h5>
                                     <ul className="link-footer d-grid gap-xxl-5 gap-4" data-aos="zoom-in" data-aos-duration={1400}>
                                         <li>
-                                            <Link href="/about" className="d-flex align-items-center gap-2 flink-items pra-clr">
+                                            <Link href={"/about"} className="d-flex align-items-center gap-2 flink-items pra-clr">
                                                 <span className="ani-icons">
                                                     <i className="fas fa-angle-double-right pra-clr" />
                                                 </span>
-                                                About Xstar
+                                                A Propos
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href="/service" className="d-flex align-items-center gap-2 flink-items pra-clr">
+                                            <Link href={"/service"} className="d-flex align-items-center gap-2 flink-items pra-clr">
                                                 <span className="ani-icons">
                                                     <i className="fas fa-angle-double-right pra-clr" />
                                                 </span>
-                                                Our Services
+                                                Nos Services
                                             </Link>
                                         </li>
+                                        {/*<li>*/}
+                                        {/*    <Link href={"/blog-list"} className="d-flex align-items-center gap-2 flink-items pra-clr">*/}
+                                        {/*        <span className="ani-icons">*/}
+                                        {/*            <i className="fas fa-angle-double-right pra-clr" />*/}
+                                        {/*        </span>*/}
+                                        {/*        Our Blogs*/}
+                                        {/*    </Link>*/}
+                                        {/*</li>*/}
                                         <li>
-                                            <Link href="/blog-grid" className="d-flex align-items-center gap-2 flink-items pra-clr">
+                                            <Link href={"/contact"} className="d-flex align-items-center gap-2 flink-items pra-clr">
                                                 <span className="ani-icons">
                                                     <i className="fas fa-angle-double-right pra-clr" />
                                                 </span>
-                                                Our Blogs
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="/contact" className="d-flex align-items-center gap-2 flink-items pra-clr">
-                                                <span className="ani-icons">
-                                                    <i className="fas fa-angle-double-right pra-clr" />
-                                                </span>
-                                                Contact Us
+                                                Nous Contacter
                                             </Link>
                                         </li>
                                     </ul>
@@ -133,35 +116,35 @@ export default function Footer1() {
                                     </h5>
                                     <ul className="link-footer d-grid gap-xxl-5 gap-4" data-aos="zoom-in" data-aos-duration={1400}>
                                         <li>
-                                            <Link href="/service" className="d-flex align-items-center gap-2 flink-items pra-clr">
+                                            <Link href={"/service"} className="d-flex align-items-center gap-2 flink-items pra-clr">
                                                 <span className="ani-icons">
                                                     <i className="fas fa-angle-double-right pra-clr" />
                                                 </span>
-                                                UI/UX Experience
+                                                Coupes de cheuveux
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href="/study-grid" className="d-flex align-items-center gap-2 flink-items pra-clr">
+                                            <Link href={"/service"} className="d-flex align-items-center gap-2 flink-items pra-clr">
                                                 <span className="ani-icons">
                                                     <i className="fas fa-angle-double-right pra-clr" />
                                                 </span>
-                                                Web Development
+                                                Coupe de barbe
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href="/study-grid" className="d-flex align-items-center gap-2 flink-items pra-clr">
+                                            <Link href={"/service"} className="d-flex align-items-center gap-2 flink-items pra-clr">
                                                 <span className="ani-icons">
                                                     <i className="fas fa-angle-double-right pra-clr" />
                                                 </span>
-                                                Product Design
+                                                Coiffure enfant
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href="/service" className="d-flex align-items-center gap-2 flink-items pra-clr">
+                                            <Link href={"/service"} className="d-flex align-items-center gap-2 flink-items pra-clr">
                                                 <span className="ani-icons">
                                                     <i className="fas fa-angle-double-right pra-clr" />
                                                 </span>
-                                                SEO Optimization
+                                                Entretien et retouches
                                             </Link>
                                         </li>
                                     </ul>
@@ -205,13 +188,13 @@ export default function Footer1() {
                     </div>
                     <div className="footer-bottom-version-one d-sm-flex gap-sm-0 gap-4 d-grid align-items-center justify-content-sm-between justify-content-center bg2-clr px-xxl-7 px-6 py-xxl-6 py-xl-6 py-7 mb-xxl-10 mb-lg-9 mb-sm-8 mb-5" data-aos="zoom-in-up" data-aos-duration={1600}>
                         <Link href="/" className="footer-logov1 m-sm-0 m-auto">
-                            <img src="/assets/img/logo/logo.png" alt="img" />
+                            <img width={200} src="/assets/img/logo/logo.png" alt="img" />
                         </Link>
-                        <Link href="/#mains" className="footer-topscroll d-center themebg">
-                            <i className="fas fa-arrow-up" />
-                        </Link>
+                        {/*<Link href="/#mains" className="footer-topscroll d-center themebg">*/}
+                        {/*    <i className="fas fa-arrow-up" />*/}
+                        {/*</Link>*/}
                         <p className="pra-clr">
-                            © All Copyright {new Date().getFullYear()} by <Link href="/" className="theme-clr">Xstar</Link>
+                            &copy; {new Date().getFullYear()} Tous Droits Réservé par <Link href="https://webwazedigital.com" className="theme-clr">Web Waze Digital</Link> - Theme by Xstar &hearts;
                         </p>
                     </div>
                 </div>

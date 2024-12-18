@@ -37,7 +37,7 @@ export default function Testimonial1() {
                                     <SwiperSlide>
                                         <div className="testimonial-zero-oneitem d-md-flex d-grid align-items-center justify-content-md-start justify-content-center text-md-start text-center gap-xxl-7 gap-xl-5 gap-4">
                                             <div className="thumb">
-                                                <img src="/assets/img/testimonial/t-version01.png" alt="img" />
+                                                <img src="/assets/img/testimonial/test1.png" alt="img" />
                                             </div>
                                             <div className="vector d-md-block d-none">
                                                 <img src="/assets/img/testimonial/vector01.png" alt="img" />
@@ -47,17 +47,14 @@ export default function Testimonial1() {
                                                     <i className="fas fa-quote-right theme-clr" />
                                                 </div>
                                                 <p className="white-clr mb-xxl-7 mb-xl-6 mb-lg-5 mb-4">
-                                                    Posuere luctus orci. Donec vitae mattis quam, vitae tempor arcu. Aenean
-                                                    non odio porttitor, convallis erat sit amet,
-                                                    facilisis velit. Nulla ornare convallis malesuada. Phasellus molestie,
-                                                    ipsum ac fringilla.
+                                                    Yes sir! Great barber with lots of skills and future Grind young man bless
                                                 </p>
                                                 <div className="desig">
                                                     <h6 className="white-clr mb-2">
-                                                        Daniel Smith
+                                                        Jeffcuts
                                                     </h6>
                                                     <span className="theme-clr">
-                                                        Senior engineer
+                                                        Jeffcuts Barbershop
                                                     </span>
                                                 </div>
                                             </div>

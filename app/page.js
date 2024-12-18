@@ -22,12 +22,12 @@ export default function Home() {
                     <Product1 />
                     <Service1 />
                     <TextSLider1 />
-                    <CaseStudy1 />
+                    {/*<CaseStudy1 />*/}
                     <Watch1 />
-                    <Team1 />
+                    {/*<Team1 />*/}
                     <TextSLider2 />
                     <Testimonial1 />
-                    <Blog1 />
+                    {/*<Blog1 />*/}
                     <TextSLider3 />
                 </div>
             </Layout>
