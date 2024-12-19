@@ -6,6 +6,7 @@ import "/public/assets/css/swiper.min.css"
 import "/public/assets/css/aos.css"
 import "/public/assets/css/main.css"
 import { Manrope, Plus_Jakarta_Sans } from 'next/font/google'
+import { Toaster, toast } from 'sonner'
 
 const manrope = Manrope({
     weight: ['300', '400', '500', '600', '700'],
@@ -27,7 +28,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="fr">
-            <body className={`${manrope.variable} ${jakarta.variable} position-relative bg2-clr`}>{children}</body>
+            <body className={`${manrope.variable} ${jakarta.variable} position-relative bg2-clr`}><Toaster position={'top-right'} richColors />{children}</body>
         </html>
     )
 }

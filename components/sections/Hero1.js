@@ -37,7 +37,7 @@ export default function Hero1() {
                                 </div>
                                 <div className="brandin-wrap d-block">
                                     <h4 className="white-clr brading-text">
-                                        Des outils de précision
+                                        Traveling Barber
                                     </h4>
                                 </div>
                             </div>

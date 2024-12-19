@@ -1,11 +1,45 @@
-
+'use client'
 import Layout from "@/components/layout/Layout"
-export default function Contact() {
-
+import {toast} from "sonner";
+import {useRouter} from "next/navigation";
+import {useState} from "react";
+export default function Contact({searchParams}) {
+    const router = useRouter()
+    const [isLoading, setIsLoading] = useState(false)
+    const {plan} = searchParams
+    async function submitHandler(e){
+        e.preventDefault()
+        setIsLoading(true)
+        const res = await fetch('/api/contact',{
+            method: "POST",
+            body: JSON.stringify({
+                firstname : e.target[0].value,
+                lastname : e.target[1].value,
+                email : e.target[2].value,
+                number : e.target[3].value,
+                schedule : `${new Date(e.target[4].value).toLocaleDateString('fr-FR',{
+                    weekday: 'long', 
+                    year: 'numeric', 
+                    month: 'long',  
+                    day: 'numeric',  
+                })} ${new Date(e.target[4].value).toLocaleTimeString()}`,
+                plan : e.target[5].value,
+                message : e.target[6].value,
+            })
+        })
+        const data = await res.json()
+        if(data.message === 'Réservation Réussie'){
+            toast.success(data.message)
+            router.push('/pricing')
+        }
+        if(data.message === 'Failed'){
+            toast.error(data.message)
+            router.refresh()
+        }
+    }
     return (
         <>
-
-            <Layout headerStyle={2} footerStyle={3} breadcrumbTitle="Contact Us">
+            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Nous Contacter">
                 <section className="contact-section pt-space pb-space">
                     <div className="container">
                         <div className="row g-xl-7 g-4 mb-xxl-7 mb-6 justify-content-center">
@@ -17,13 +51,10 @@ export default function Contact() {
                                         <path d="M46.4242 16.4252L37.5742 7.5752" stroke="#E3FF04" strokeWidth={4} strokeLinecap="round" strokeLinejoin="round" />
                                     </svg>
                                     <h5 className="white mt-xxl-7 mt-6 mb-xxl-7 mb-6">
-                                        Phone &amp; Fax
+                                        Phone
                                     </h5>
                                     <span className="msub d-block mb-2">
-                                        Mobile : +197 -90 - 56 - 780
-                                    </span>
-                                    <span className="msub">
-                                        Fax : +44-208-1234567
+                                        Mobile : +1 (514) 557 4194
                                     </span>
                                 </div>
                             </div>
@@ -33,13 +64,13 @@ export default function Contact() {
                                         <path d="M3.04604 3.04604C3.69236 2.39975 4.58521 2 5.57143 2H62.7143C63.7004 2 64.5932 2.39975 65.2396 3.04604M3.04604 3.04604C2.39975 3.69236 2 4.58521 2 5.57143V48.4286C2 50.4011 3.599 52 5.57143 52H41.2857M3.04604 3.04604L9.14286 9.14307M65.2396 3.04604C65.8861 3.69236 66.2857 4.58521 66.2857 5.57143V48.4286C66.2857 50.4011 64.6868 52 62.7143 52H55.5714M65.2396 3.04604L39.1936 29.0918C36.4039 31.8814 31.8814 31.8814 29.0918 29.0918L19.8571 19.8571" stroke="#E3FF04" strokeWidth={4} strokeLinecap="round" strokeLinejoin="round" />
                                     </svg>
                                     <h5 className="white mt-xxl-7 mt-6 mb-xxl-7 mb-6">
-                                        Mail Address
+                                        Adresse Email
                                     </h5>
                                     <span className="msub d-block mb-2">
-                                        Info.company@gmail.com
+                                        wenshair1@gmail.com
                                     </span>
                                     <span className="msub">
-                                        Info.company@yahoo.com
+                                        contact@wenshair.com
                                     </span>
                                 </div>
                             </div>
@@ -49,13 +80,13 @@ export default function Contact() {
                                         <path d="M19.1781 -0.0175781C8.92969 -0.0175781 0.25 8.71211 0.25 19.0512C0.25 29.8793 10.3109 40.9527 17.0781 48.7355C17.1047 48.7668 18.1984 49.9809 19.5453 49.9809H19.6641C21.0125 49.9809 22.0984 48.7668 22.125 48.7355C28.475 41.4355 37.75 29.3965 37.75 19.0512C37.75 8.71055 30.9797 -0.0175781 19.1781 -0.0175781ZM19.8047 46.6387C19.75 46.6934 19.6703 46.7543 19.6 46.8059C19.5281 46.7559 19.45 46.6934 19.3922 46.6387L18.575 45.698C12.1594 38.3387 3.37344 28.259 3.37344 19.0496C3.37344 10.4059 10.6109 3.1043 19.1766 3.1043C29.8469 3.1043 34.6234 11.1121 34.6234 19.0496C34.6234 26.0402 29.6375 35.3246 19.8047 46.6387ZM19.0547 9.44336C13.8781 9.44336 9.67969 13.6402 9.67969 18.8184C9.67969 23.9965 13.8781 28.1934 19.0547 28.1934C24.2312 28.1934 28.4297 23.9949 28.4297 18.8184C28.4297 13.6418 24.2328 9.44336 19.0547 9.44336ZM19.0547 25.0684C15.6078 25.0684 12.7328 22.1965 12.7328 18.7496C12.7328 15.3027 15.5359 12.4996 18.9828 12.4996C22.4312 12.4996 25.2328 15.3027 25.2328 18.7496C25.2344 22.1965 22.5031 25.0684 19.0547 25.0684Z" fill="#E3FF04" />
                                     </svg>
                                     <h5 className="white mt-xxl-7 mt-6 mb-xxl-7 mb-6">
-                                        Our Location
+                                        Localisation
                                     </h5>
                                     <span className="msub d-block mb-2">
-                                        Mobile : 85 Ketch Harbour
+                                        Traveling Barber
                                     </span>
                                     <span className="msub">
-                                        RoadBensalem, PA 19020
+                                        Montreal, Qc
                                     </span>
                                 </div>
                             </div>
@@ -65,57 +96,86 @@ export default function Contact() {
                                         <path d="M27 13.1111V27H40.8889M27 52C13.1929 52 2 40.8072 2 27C2 13.1929 13.1929 2 27 2C40.8072 2 52 13.1929 52 27C52 40.8072 40.8072 52 27 52Z" stroke="#E3FF04" strokeWidth={4} strokeLinecap="round" strokeLinejoin="round" />
                                     </svg>
                                     <h5 className="white mt-xxl-7 mt-6 mb-xxl-7 mb-6">
-                                        Office Hour
+                                        Disponibilité
                                     </h5>
                                     <span className="msub d-block mb-2">
-                                        Sun - Thu 09 am - 06pm
+                                        Ouvert
                                     </span>
                                     <span className="msub">
-                                        Fri - Sat 4 pm - 10pm
+                                        Lundi au Dimanche
                                     </span>
                                 </div>
                             </div>
                         </div>
-                        <div className="row g-xxl-7 g-4">
+                        <div id={'book'} className="row g-xxl-7 g-4">
                             <div className="col-lg-6" data-aos="zoom-in" data-aos-duration={2000}>
                                 <div className="contact-map">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52816169.558200695!2d-161.49265223136007!3d36.102185713814805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sbd!4v1711689726724!5m2!1sen!2sbd" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2619.159429746404!2d-73.5672553!3d45.5016889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91fcbfa0f7cf1%3A0x71eac709b4332b35!2sMontreal%2C%20QC%2C%20Canada!5e0!3m2!1sen!2sus!4v1711689862674!5m2!1sen!2sus"
+                                        allowFullScreen="" loading="lazy"
+                                        referrerPolicy="no-referrer-when-downgrade"></iframe>
+
                                 </div>
                             </div>
                             <div className="col-lg-6" data-aos="zoom-in" data-aos-duration={2000}>
                                 <div className="contact-content bg1-clr">
                                     <h3 className="white mb-xxl-15 mb-xl-10 mb-lg-7 mb-5">
-                                        Leave A Message
+                                    Book now
                                     </h3>
-                                    <form action="#">
+                                    <form onSubmit={e => submitHandler(e)}>
                                         <div className="row g-xxl-8 g-xl-6 g-lg-4 g-4">
                                             <div className="col-lg-6">
-                                                <input type="text" placeholder="Name" />
+                                                <input type="text" name={'firstname'} placeholder="Prénom"/>
                                             </div>
                                             <div className="col-lg-6">
-                                                <input type="email" placeholder="Email" />
+                                                <input type="text" name={'lastname'} placeholder="Nom"/>
+                                            </div>
+                                            <div className="col-lg-6">
+                                                <input type="email" name={'email'} placeholder="Email"/>
+                                            </div>
+                                            <div className="col-lg-6">
+                                                <input type="text" name={'number'} placeholder="Téléphone"/>
                                             </div>
                                             <div className="col-lg-12">
-                                                <select class="form-select">
-                                                    <option value={1}>
-                                                        Subject
-                                                    </option>
-                                                    <option value={1}>
-                                                        Subject.....
-                                                    </option>
-                                                    <option value={1}>
-                                                        Subject.....
-                                                    </option>
-                                                </select>
+                                                <input type={'datetime-local'}/>
                                             </div>
-                                            <div className="col-lg-12">
-                                                <textarea name="messages" rows={5} placeholder="Message" />
-                                            </div>
-                                            <div className="col-lg-5">
-                                                <button type="submit" className="submit-btn">
-                                                    Send Message
-                                                </button>
-                                            </div>
+                                                <div className="col-lg-12">
+                                                    <select defaultValue={plan} name={'plan'} className="form-select">
+                                                        <option value={''}>
+                                                            Choisir un plan
+                                                        </option>
+                                                        <option value={'coupes de cheveux'}>
+                                                            Coupes de cheuveux
+                                                        </option>
+                                                        <option
+                                                                value={'taille et entretien de barbe'}>
+                                                            Taille et entretien de barbe
+                                                        </option>
+                                                        <option  value={'dreadlocks'}>
+                                                            Dreadlocks
+                                                        </option>
+                                                        <option
+                                                                value={'soins capillaires'}>
+                                                            Soins capillaires
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                                <div className="col-lg-12">
+                                                    <textarea name="messages" rows={5}
+                                                              placeholder="Message : Personnaliser votre demande"/>
+                                                </div>
+                                                <div className="col-lg-5">
+                                                    <button type="submit" disabled={isLoading} className="submit-btn">
+                                                        {isLoading ?
+                                                            <div className={'loader-cont'}>
+                                                            <div className="newtons-cradle">
+                                                                <div className="newtons-cradle__dot"></div>
+                                                                <div className="newtons-cradle__dot"></div>
+                                                                <div className="newtons-cradle__dot"></div>
+                                                                <div className="newtons-cradle__dot"></div>
+                                                            </div></div> : "Book Now"}
+                                                    </button>
+                                                </div>
                                         </div>
                                     </form>
                                 </div>

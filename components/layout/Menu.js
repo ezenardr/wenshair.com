@@ -41,32 +41,28 @@ export default function Menu() {
             <ul className="custom-nav d-lg-flex d-grid gap-xxl-10 gap-xl-8 gap-lg-5 gap-md-2 gap-2 pt-lg-0 pt-5">
                 <li className="menu-item position-relative">
                     <Link href={'/'} className="position-relative ps-5  white-clr fw_500 cus-z1">
-                        Home
+                        accueil
                     </Link>
                 </li>
                 <li className="menu-item position-relative">
                     <Link href={'/about'} className="position-relative ps-5  white-clr fw_500 cus-z1">
-                        About
+                        A propos
                     </Link>
                 </li>
                 <li className="menu-item position-relative">
-                    <Link href={'/faq'} className="position-relative ps-5  white-clr fw_500 cus-z1">
-                        FAQS
+                    <Link href={'pricing'} className="position-relative  ps-5 fw_500 white-clr cus-z1"
+                          onClick={() => handleAccordion(3)}>
+                        tarifs
                     </Link>
                 </li>
                 <li className="menu-item position-relative">
-                    <Link href={'pricing'} className="position-relative  ps-5 fw_500 white-clr cus-z1" onClick={() => handleAccordion(3)}>
-                        Pricing
-                    </Link>
-                </li>
-                <li className="menu-item position-relative">
-                    <Link href={'/blog-list'} className="position-relative  ps-5 fw_500 white-clr cus-z1">
+                    <Link href={'/blog'} className="position-relative  ps-5 fw_500 white-clr cus-z1">
                         Blog
                     </Link>
                 </li>
                 <li className="menu-item position-relative">
-                    <Link href="/contact" className="fw_500">
-                        Contact Us
+                    <Link href={'/faq'} className="position-relative ps-5  white-clr fw_500 cus-z1">
+                        FAQs
                     </Link>
                 </li>
             </ul>

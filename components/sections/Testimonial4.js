@@ -45,20 +45,20 @@ export default function Testimonial4() {
                         <div className="col-lg-4" data-aos="zoom-in-right" data-aos-duration={1600}>
                             <div className="d-flex justify-content-md-end">
                                 <div className="d-flex align-items-center gap-3">
-                                    <ul className="customer-man d-flex align-items-center">
-                                        <li>
-                                            <img src="/assets/img/team/avatar1.png" alt="img" />
-                                        </li>
-                                        <li>
-                                            <img src="/assets/img/team/avatar2.png" alt="img" />
-                                        </li>
-                                        <li>
-                                            <img src="/assets/img/team/avatar3.png" alt="img" />
-                                        </li>
-                                        <li>
-                                            <img src="/assets/img/team/avatar4.png" alt="img" />
-                                        </li>
-                                    </ul>
+                                    {/*<ul className="customer-man d-flex align-items-center">*/}
+                                    {/*    <li>*/}
+                                    {/*        <img src="/assets/img/team/avatar1.png" alt="img" />*/}
+                                    {/*    </li>*/}
+                                    {/*    <li>*/}
+                                    {/*        <img src="/assets/img/team/avatar2.png" alt="img" />*/}
+                                    {/*    </li>*/}
+                                    {/*    <li>*/}
+                                    {/*        <img src="/assets/img/team/avatar3.png" alt="img" />*/}
+                                    {/*    </li>*/}
+                                    {/*    <li>*/}
+                                    {/*        <img src="/assets/img/team/avatar4.png" alt="img" />*/}
+                                    {/*    </li>*/}
+                                    {/*</ul>*/}
                                     <div className="review-cont">
                                         <div className="d-flex align-items-center gap-2 mb-xl-2 mb-1">
                                             <i className="fa-solid fa-star" />
@@ -67,9 +67,9 @@ export default function Testimonial4() {
                                             <i className="fa-solid fa-star" />
                                             <i className="fa-regular fa-star" />
                                         </div>
-                                        <span className="texts">
-                                            450+ reviews
-                                        </span>
+                                        {/*<span className="texts">*/}
+                                        {/*    450+ reviews*/}
+                                        {/*</span>*/}
                                     </div>
                                 </div>
                             </div>
@@ -91,22 +91,18 @@ export default function Testimonial4() {
                                                 <path d="M34.2852 0V25.8H47.1423L38.5708 43H51.4279L59.9994 25.8V0H34.2852Z" fill="#E3FF04" />
                                             </svg>
                                             <p className="pra-clr mt-xxl-10 mt-xl-8 mt-lg-7 mt-6 mb-xxl-10 mb-xl-8 mb-lg-7 mb-6">
-                                                “Welcome to our digital agency We specialize in helping business most like
-                                                yours
-                                                succeed
-                                                online. From website design and
-                                                development to digital marketing agency”
+                                                “J'ai trouvé l'endroit parfait pour mes dreadlocks ! L'équipe est professionnelle, attentive et utilise des produits de qualité. Mes locks n'ont jamais été aussi belles et faciles à entretenir. Merci pour ce service exceptionnel !”
                                             </p>
                                             <div className="d-flex flex-wrap gap-4 align-items-center justify-content-between">
                                                 <div className="d-flex align-items-center gap-xxl-4 gap-xl-3 gap-3">
-                                                    <img src="/assets/img/team/delors.png" alt="img" className="radius100" />
+                                                    {/*<img src="/assets/img/team/delors.png" alt="img" className="radius100" />*/}
                                                     <div className="cont">
                                                         <div>
                                                             <h6 className="mb-2 white-clr">
-                                                                Delores Olivo
+                                                                Samuel Okoye
                                                             </h6>
                                                             <span className="pra-clr">
-                                                                Software Tester
+                                                                Entrepreneur
                                                             </span>
                                                         </div>
                                                     </div>
@@ -129,22 +125,18 @@ export default function Testimonial4() {
                                                 <path d="M34.2852 0V25.8H47.1423L38.5708 43H51.4279L59.9994 25.8V0H34.2852Z" fill="#E3FF04" />
                                             </svg>
                                             <p className="pra-clr mt-xxl-10 mt-xl-8 mt-lg-7 mt-6 mb-xxl-10 mb-xl-8 mb-lg-7 mb-6">
-                                                “Welcome to our digital agency We specialize in helping business most like
-                                                yours
-                                                succeed
-                                                online. From website design and
-                                                development to digital marketing agency”
+                                                “Yes sir! Great barber with lots of skills and future Grind young man bless”
                                             </p>
                                             <div className="d-flex flex-wrap gap-4 align-items-center justify-content-between">
                                                 <div className="d-flex align-items-center gap-xxl-4 gap-xl-3 gap-3">
-                                                    <img src="/assets/img/team/delors.png" alt="img" className="radius100" />
+                                                    {/*<img src="/assets/img/team/delors.png" alt="img" className="radius100" />*/}
                                                     <div className="cont">
                                                         <div>
                                                             <h6 className="mb-2 white-clr">
-                                                                Delores Olivo
+                                                                Jeffcuts
                                                             </h6>
                                                             <span className="pra-clr">
-                                                                Software Tester
+                                                                Jeffcuts Barbershop
                                                             </span>
                                                         </div>
                                                     </div>

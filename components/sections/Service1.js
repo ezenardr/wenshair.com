@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 import Link from "next/link"
-export default function Service1() {
+export default function Service1({showActionLink = true}) {
     const [isAccordion, setIsAccordion] = useState(1)
     const handleAccordion = (key) => {
         setIsAccordion(prevState => prevState === key ? null : key)
@@ -19,12 +19,12 @@ export default function Service1() {
                                 <span className="fw-400">Services</span> d’Excellence
                             </h2>
                         </div>
-                        <Link href={"/service"} className="radius-btn d-inline-flex radius100 py-xxl-2 py-2 px-xxl-5 px-5 theme-border theme-clr gap-xxl-4 gap-3 mb-xxl-8 mb-xl-6 mb-5 style-2">
+                        {showActionLink && <Link href={"/service"} className="radius-btn d-inline-flex radius100 py-xxl-2 py-2 px-xxl-5 px-5 theme-border theme-clr gap-xxl-4 gap-3 mb-xxl-8 mb-xl-6 mb-5 style-2">
                             Voir tout nos services
                             <span className="rot60 d-inline-block">
                                 <i className="fas fa-arrow-up theme-clr" />
                             </span>
-                        </Link>
+                        </Link>}
                     </div>
                     {/*Service Tabing section*/}
                     <div className="row g-xxl-6 g-4">
@@ -81,8 +81,8 @@ export default function Service1() {
                                                 </span>
                                             </span>
                                             <span className="mtitle d-block mt-6">
-                                                <Link href="/service-details" className="white-clr whitehover">
-                                                    Coupe et taille de barbe
+                                                <Link href={"/service-details"} className="white-clr whitehover">
+                                                   Taille et entretien de barbe
                                                 </Link>
                                             </span>
                                             <span className="pras mt-xxl-7 mt-xl-5 mt-4 d-block">
@@ -122,27 +122,27 @@ export default function Service1() {
                                                 </span>
                                             </span>
                                             <span className="mtitle d-block mt-6">
-                                                <Link href="/service-details" className="white-clr whitehover">
-                                                    Coiffure enfant
+                                                <Link href={"/service-details"} className="white-clr whitehover">
+                                                    Dreadlocks
                                                 </Link>
                                             </span>
                                             <span className="pras mt-xxl-7 mt-xl-5 mt-4 d-block">
-                                                Les coupes de cheveux pour enfants ne sont pas seulement une question de style, mais aussi de confort et de fun ! Nous offrons un service doux et attentionné pour que votre petit se sente à l'aise.
+                                               Nous utilisons des produits naturels adaptés à tous les types de cheveux, garantissant des locks solides, bien définies et en parfaite santé.
                                             </span>
                                         </div>
                                         <div className="images-remove-area d-lg-flex d-none align-items-center gap-xxl-8 gap-4">
                                             <ul className="modern-list d-grid gap-2">
                                                 <li className="d-flex align-items-center gap-2">
-                                                    <i className="fas fa-chevron-right" /> Détente
+                                                    <i className="fas fa-chevron-right" /> Personnalisation
                                                 </li>
                                                 <li className="d-flex align-items-center gap-2">
-                                                    <i className="fas fa-chevron-right" /> Sécurité
+                                                    <i className="fas fa-chevron-right" /> Durabilité
                                                 </li>
                                                 <li className="d-flex align-items-center gap-2">
-                                                    <i className="fas fa-chevron-right" /> Créativité
+                                                    <i className="fas fa-chevron-right" /> Soin Naturel
                                                 </li>
                                                 <li className="d-flex align-items-center gap-2">
-                                                    <i className="fas fa-chevron-right" /> Rapidité
+                                                    <i className="fas fa-chevron-right" /> Entretien Facile
                                                 </li>
                                             </ul>
                                             <div className="tab-remove-thumb">
@@ -163,12 +163,12 @@ export default function Service1() {
                                                 </span>
                                             </span>
                                             <span className="mtitle d-block mt-6">
-                                                <Link href="/service-details" className="white-clr whitehover">
-                                                    Entretien et retouches
+                                                <Link href={"/service-details"} className="white-clr whitehover">
+                                                    Soins capillaires
                                                 </Link>
                                             </span>
                                             <span className="pras mt-xxl-7 mt-xl-5 mt-4 d-block">
-                                                Vous souhaitez garder votre coiffure au top entre deux visites ? Notre service d'entretien et de retouches est conçu pour vous aider à maintenir votre look parfait.
+                                                Prenez soin de vos cheveux grâce à nos traitements spécialisés conçus pour nourrir, réparer et revitaliser votre chevelure.
                                             </span>
                                         </div>
                                         <div className="images-remove-area d-lg-flex d-none align-items-center gap-xxl-8 gap-4">

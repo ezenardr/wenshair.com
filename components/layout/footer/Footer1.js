@@ -16,18 +16,37 @@ export default function Footer1() {
                                             <line y1={-1} x2={83} y2={-1} transform="matrix(1 0 0 -1 0 0)" stroke="url(#paint0_linear_6308_4304)" strokeWidth={2} />
                                             <defs>
                                                 <linearGradient id="paint0_linear_6308_4304" x1="4.02912" y1="0.000277584" x2={80} y2="0.000110496" gradientUnits="userSpaceOnUse">
-                                                    <stop offset={0} stopColor="#E3FF04" />
-                                                    <stop offset={1} stopColor="#E3FF04" stopOpacity={0} />
+                                                    <stop offset={0} stopColor="#f2d129" />
+                                                    <stop offset={1} stopColor="#f2d129" stopOpacity={0} />
                                                 </linearGradient>
                                             </defs>
                                         </svg>
                                     </h5>
                                     <p className="pra-clr mb-xxl-7 mb-6" data-aos="zoom-in" data-aos-duration={1600}>
-                                        Plus qu'un simple salon, nous sommes un lieu où vous pouvez vous détendre, prendre soin de vous et repartir avec une confiance renouvelée.
+                                        Plus qu'un simple salon, nous sommes un lieu où vous pouvez prendre soin de vous et repartir avec une confiance renouvelée.
                                     </p>
                                     <ul className="common-social d-flex align-items-center gap-2">
                                         <li data-aos="zoom-in-right" data-aos-duration={1400}>
-                                            <Link href="https://www.instagram.com/wenshair/" target={"_blank"}  className="d-center">
+                                            <Link href="https://web.facebook.com/wens.amilcar" target={"_blank"}
+                                                  className="d-center">
+                                                <svg width={10} height={16} viewBox="0 0 10 16" fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.8" clipPath="url(#clip0_6308_28)">
+                                                        <path
+                                                            d="M8.72266 9L9.16703 6.10437H6.38859V4.22531C6.38859 3.43313 6.77672 2.66094 8.02109 2.66094H9.28422V0.195625C9.28422 0.195625 8.13797 0 7.04203 0C4.75391 0 3.25828 1.38688 3.25828 3.8975V6.10437H0.714844V9H3.25828V16H6.38859V9H8.72266Z"
+                                                            fill="white"/>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_6308_28">
+                                                            <rect width={10} height={16} fill="white"/>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </Link>
+                                        </li>
+                                        <li data-aos="zoom-in-right" data-aos-duration={1400}>
+                                            <Link href="https://www.instagram.com/wenshair/" target={"_blank"}
+                                                  className="d-center">
                                                 <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
                                                      xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -37,7 +56,7 @@ export default function Footer1() {
                                             </Link>
                                         </li>
                                         <li data-aos="zoom-in-right" data-aos-duration={1600}>
-                                            <Link href="/#" className="d-center">
+                                            <Link href="https://www.tiktok.com/@wenshair1" target={'_blank'} className="d-center">
                                                 <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
                                                      xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -47,38 +66,84 @@ export default function Footer1() {
 
                                             </Link>
                                         </li>
+                                        <li data-aos="zoom-in-right" data-aos-duration={1600}>
+                                            <Link href="https://www.youtube.com/@loyaltyHT" className="d-center">
+                                                <svg width={18} height={12} viewBox="0 0 18 12" fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M17.1769 1.87759C16.9806 1.13853 16.4023 0.556469 15.668 0.358938C14.337 0 9.00014 0 9.00014 0C9.00014 0 3.66327 0 2.3323 0.358938C1.59802 0.5565 1.0197 1.13853 0.823422 1.87759C0.466797 3.21719 0.466797 6.01213 0.466797 6.01213C0.466797 6.01213 0.466797 8.80706 0.823422 10.1467C1.0197 10.8857 1.59802 11.4435 2.3323 11.6411C3.66327 12 9.00014 12 9.00014 12C9.00014 12 14.337 12 15.668 11.6411C16.4023 11.4435 16.9806 10.8857 17.1769 10.1467C17.5335 8.80706 17.5335 6.01213 17.5335 6.01213C17.5335 6.01213 17.5335 3.21719 17.1769 1.87759V1.87759ZM7.25467 8.54972V3.47453L11.7153 6.01219L7.25467 8.54972V8.54972Z"
+                                                        fill="white"/>
+                                                </svg>
+                                            </Link>
+                                        </li>
+                                        <li data-aos="zoom-in-right" data-aos-duration={1600}>
+                                            <Link href="https://www.youtube.com/@loyaltyHT" className="d-center">
+                                                <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                          d="M12.0259 0.198048C14.8119 0.334971 17.408 1.48384 19.3908 3.46799C21.5058 5.58431 22.67 8.39748 22.6688 11.3892C22.6663 17.5628 17.6405 22.5859 11.4665 22.5859C9.14477 22.5859 7.2998 21.8725 6.1085 21.2231L0.169922 22.7801L1.75922 16.9779C0.77889 15.2799 0.263045 13.3538 0.263853 11.3803C0.266332 5.20683 5.29172 0.184204 11.4663 0.184204L12.0259 0.198048ZM6.38361 19.196L6.72366 19.3977C8.15323 20.2456 9.79189 20.6943 11.4627 20.6949H11.4664C16.5984 20.6949 20.7753 16.52 20.7774 11.3885C20.7783 8.90187 19.8108 6.56367 18.0528 4.80463C16.2949 3.04548 13.9571 2.07613 11.4702 2.07533C6.33424 2.07533 2.15731 6.24981 2.15527 11.3809C2.15457 13.1394 2.64681 14.852 3.57885 16.3336L3.80024 16.6858L2.85962 20.12L6.38361 19.196ZM17.1101 14.0517C17.0402 13.9349 16.8536 13.865 16.5737 13.7249C16.2938 13.5849 14.9176 12.9081 14.6611 12.8146C14.4045 12.7214 14.2179 12.6747 14.0313 12.9547C13.8447 13.2348 13.3083 13.865 13.1449 14.0517C12.9817 14.2384 12.8184 14.2618 12.5386 14.1217C12.2586 13.9818 11.3567 13.6863 10.2876 12.7331C9.45545 11.9913 8.89369 11.0751 8.7304 10.795C8.56716 10.515 8.71299 10.3635 8.85311 10.2241C8.97905 10.0987 9.13307 9.89728 9.27303 9.73391C9.41298 9.57059 9.4596 9.45382 9.55294 9.26718C9.64622 9.08043 9.59956 8.91711 9.5296 8.77707C9.4596 8.63696 8.89983 7.25987 8.66659 6.69968C8.43933 6.1542 8.20857 6.22805 8.03677 6.21943C7.87369 6.21135 7.68691 6.20957 7.50034 6.20957C7.31371 6.20957 7.01047 6.27954 6.75389 6.55969C6.49732 6.83973 5.77421 7.51664 5.77421 8.89363C5.77421 10.2708 6.77723 11.601 6.91718 11.7878C7.05714 11.9746 8.89094 14.8003 11.6988 16.0122C12.3666 16.3005 12.888 16.4726 13.2945 16.6015C13.9651 16.8145 14.5753 16.7845 15.0576 16.7124C15.5954 16.6321 16.7137 16.0356 16.9469 15.3822C17.1801 14.7285 17.1801 14.1684 17.1101 14.0517Z"
+                                                          fill="white"/>
+                                                </svg>
+                                            </Link>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
                             <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-6">
                                 <div className="footer-widget">
-                                    <h5 className="footer-title mb-xxl-7 mb-xl-6 mb-5" data-aos="zoom-in-down" data-aos-duration={1900}>
+                                    <h5 className="footer-title mb-xxl-7 mb-xl-6 mb-5" data-aos="zoom-in-down"
+                                        data-aos-duration={1900}>
                                         Liens Rapides
-                                        <svg className="d-block mt-xxl-4 mt-3" width={83} height={2} viewBox="0 0 83 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <line y1={-1} x2={83} y2={-1} transform="matrix(1 0 0 -1 0 0)" stroke="url(#paint0_linear_6308_4304)" strokeWidth={2} />
+                                        <svg className="d-block mt-xxl-4 mt-3" width={83} height={2} viewBox="0 0 83 2"
+                                             fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <line y1={-1} x2={83} y2={-1} transform="matrix(1 0 0 -1 0 0)"
+                                                  stroke="url(#paint0_linear_6308_4304)" strokeWidth={2}/>
                                             <defs>
-                                                <linearGradient id="paint0_linear_6308_43041" x1="4.02912" y1="0.000277584" x2={80} y2="0.000110496" gradientUnits="userSpaceOnUse">
-                                                    <stop offset={0} stopColor="#E3FF04" />
-                                                    <stop offset={1} stopColor="#E3FF04" stopOpacity={0} />
+                                                <linearGradient id="paint0_linear_6308_43041" x1="4.02912"
+                                                                y1="0.000277584" x2={80} y2="0.000110496"
+                                                                gradientUnits="userSpaceOnUse">
+                                                    <stop offset={0} stopColor="#f2d129"/>
+                                                    <stop offset={1} stopColor="#f2d129" stopOpacity={0}/>
                                                 </linearGradient>
                                             </defs>
                                         </svg>
                                     </h5>
-                                    <ul className="link-footer d-grid gap-xxl-5 gap-4" data-aos="zoom-in" data-aos-duration={1400}>
+                                    <ul className="link-footer d-grid gap-xxl-5 gap-4" data-aos="zoom-in"
+                                        data-aos-duration={1400}>
                                         <li>
-                                            <Link href={"/about"} className="d-flex align-items-center gap-2 flink-items pra-clr">
+                                            <Link href={"/about"}
+                                                  className="d-flex align-items-center gap-2 flink-items pra-clr">
                                                 <span className="ani-icons">
-                                                    <i className="fas fa-angle-double-right pra-clr" />
+                                                    <i className="fas fa-angle-double-right pra-clr"/>
                                                 </span>
                                                 A Propos
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href={"/service"} className="d-flex align-items-center gap-2 flink-items pra-clr">
+                                            <Link href={"/service"}
+                                                  className="d-flex align-items-center gap-2 flink-items pra-clr">
                                                 <span className="ani-icons">
-                                                    <i className="fas fa-angle-double-right pra-clr" />
+                                                    <i className="fas fa-angle-double-right pra-clr"/>
                                                 </span>
                                                 Nos Services
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href={"/pricing"}
+                                                  className="d-flex align-items-center gap-2 flink-items pra-clr">
+                                                <span className="ani-icons">
+                                                    <i className="fas fa-angle-double-right pra-clr"/>
+                                                </span>
+                                                Nos Tarifs
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href={"/faq"}
+                                                  className="d-flex align-items-center gap-2 flink-items pra-clr">
+                                                <span className="ani-icons">
+                                                    <i className="fas fa-angle-double-right pra-clr"/>
+                                                </span>
+                                                FAQS
                                             </Link>
                                         </li>
                                         {/*<li>*/}
@@ -89,27 +154,20 @@ export default function Footer1() {
                                         {/*        Our Blogs*/}
                                         {/*    </Link>*/}
                                         {/*</li>*/}
-                                        <li>
-                                            <Link href={"/contact"} className="d-flex align-items-center gap-2 flink-items pra-clr">
-                                                <span className="ani-icons">
-                                                    <i className="fas fa-angle-double-right pra-clr" />
-                                                </span>
-                                                Nous Contacter
-                                            </Link>
-                                        </li>
                                     </ul>
                                 </div>
                             </div>
                             <div className="col-xxl-2 col-xl-3 col-lg-3 col-md-6 col-sm-6">
                                 <div className="footer-widget">
-                                    <h5 className="footer-title mb-xxl-7 mb-xl-6 mb-5" data-aos="zoom-in-down" data-aos-duration={1900}>
+                                    <h5 className="footer-title mb-xxl-7 mb-xl-6 mb-5" data-aos="zoom-in-down"
+                                        data-aos-duration={1900}>
                                         Services
                                         <svg className="d-block mt-xxl-4 mt-3" width={83} height={2} viewBox="0 0 83 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <line y1={-1} x2={83} y2={-1} transform="matrix(1 0 0 -1 0 0)" stroke="url(#paint0_linear_6308_4305)" strokeWidth={2} />
                                             <defs>
                                                 <linearGradient id="paint0_linear_6308_4305" x1="4.02912" y1="0.000277584" x2={80} y2="0.000110496" gradientUnits="userSpaceOnUse">
-                                                    <stop offset={0} stopColor="#E3FF04" />
-                                                    <stop offset={1} stopColor="#E3FF04" stopOpacity={0} />
+                                                    <stop offset={0} stopColor="#f2d129" />
+                                                    <stop offset={1} stopColor="#f2d129" stopOpacity={0} />
                                                 </linearGradient>
                                             </defs>
                                         </svg>
@@ -152,49 +210,53 @@ export default function Footer1() {
                             </div>
                             <div className="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6">
                                 <div className="footer-widget">
-                                    <h5 className="footer-title mb-xxl-7 mb-xl-6 mb-5" data-aos="zoom-in-down" data-aos-duration={1900}>
-                                        Newsletter
-                                        <svg className="d-block mt-xxl-4 mt-3" width={83} height={2} viewBox="0 0 83 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <line y1={-1} x2={83} y2={-1} transform="matrix(1 0 0 -1 0 0)" stroke="url(#paint0_linear_6308_4306)" strokeWidth={2} />
+                                    <h5 className="footer-title mb-xxl-7 mb-xl-6 mb-5" data-aos="zoom-in-down"
+                                        data-aos-duration={1900}>
+                                        Let's talk
+                                        <svg className="d-block mt-xxl-4 mt-3" width={83} height={2} viewBox="0 0 83 2"
+                                             fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <line y1={-1} x2={83} y2={-1} transform="matrix(1 0 0 -1 0 0)"
+                                                  stroke="url(#paint0_linear_6308_4306)" strokeWidth={2}/>
                                             <defs>
-                                                <linearGradient id="paint0_linear_6308_4306" x1="4.02912" y1="0.000277584" x2={80} y2="0.000110496" gradientUnits="userSpaceOnUse">
-                                                    <stop offset={0} stopColor="#E3FF04" />
-                                                    <stop offset={1} stopColor="#E3FF04" stopOpacity={0} />
+                                                <linearGradient id="paint0_linear_6308_4306" x1="4.02912"
+                                                                y1="0.000277584" x2={80} y2="0.000110496"
+                                                                gradientUnits="userSpaceOnUse">
+                                                    <stop offset={0} stopColor="#f2d129"/>
+                                                    <stop offset={1} stopColor="#f2d129" stopOpacity={0}/>
                                                 </linearGradient>
                                             </defs>
                                         </svg>
                                     </h5>
                                     <p className="pra-clr mb-xxl-7 mb-6" data-aos="zoom-in" data-aos-duration={1600}>
-                                        Sign up to seargin weekly newsletter to get the latest updates.
+                                        Contactez-nous et réservez votre rendez-vous dès aujourd’hui pour une expérience
+                                        unique !
                                     </p>
-                                    <form action="#" className="foote-formv1 d-flex align-items-center justify-content-between" data-aos="zoom-in-down" data-aos-duration={1200}>
-                                        <input type="email" placeholder="Enter Email Address" />
-                                        <button type="submit" className="themebg d-center rounded-1">
-                                            <svg width={25} height={24} viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <g clipPath="url(#clip0_6308_51)">
-                                                    <path d="M24.177 2.42216C24.294 1.87753 23.7601 1.4183 23.2392 1.61705L0.645685 10.242C0.512852 10.2927 0.398516 10.3825 0.317763 10.4995C0.23701 10.6165 0.193635 10.7553 0.193361 10.8975C0.193087 11.0397 0.235926 11.1786 0.316228 11.2959C0.396529 11.4133 0.510518 11.5035 0.643154 11.5547L6.99011 14.006V21.7269C6.9901 21.8851 7.04344 22.0387 7.14153 22.1628C7.23961 22.287 7.3767 22.3744 7.53062 22.411C7.68454 22.4476 7.84631 22.4312 7.98976 22.3645C8.13322 22.2977 8.24997 22.1846 8.32116 22.0433L10.9462 16.8342L17.3522 21.5884C17.7419 21.8776 18.302 21.6936 18.4438 21.2289C24.425 1.61859 24.1664 2.47143 24.177 2.42216ZM18.5999 4.8933L7.59357 12.7316L2.85793 10.9027L18.5999 4.8933ZM8.39634 13.8863L17.9901 7.05398C9.7348 15.7628 10.166 15.3044 10.13 15.3529C10.0765 15.4248 10.223 15.1444 8.39634 18.7692V13.8863ZM17.3896 19.8649L11.7508 15.6802L21.9465 4.92423L17.3896 19.8649Z" fill="black" />
-                                                </g>
-                                                <defs>
-                                                    <clipPath id="clip0_6308_51">
-                                                        <rect width={24} height={24} fill="white" transform="translate(0.193359)" />
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>
-                                        </button>
-                                    </form>
+
+                                        <Link href={"/contact"}
+                                              className="d-flex w-100 align-items-center justify-content-center gap-sm-3 gap-2 touch-btn cmn-btn">
+                                        <span className="rot60">
+                                            <i className="fas fa-arrow-up"/>
+                                        </span>
+                                            Get In Touch
+                                        </Link>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="footer-bottom-version-one d-sm-flex gap-sm-0 gap-4 d-grid align-items-center justify-content-sm-between justify-content-center bg2-clr px-xxl-7 px-6 py-xxl-6 py-xl-6 py-7 mb-xxl-10 mb-lg-9 mb-sm-8 mb-5" data-aos="zoom-in-up" data-aos-duration={1600}>
+                    <div
+                        className="footer-bottom-version-one d-sm-flex gap-sm-0 gap-4 d-grid align-items-center justify-content-sm-between justify-content-center bg2-clr px-xxl-7 px-6 py-xxl-6 py-xl-6 py-7 mb-xxl-10 mb-lg-9 mb-sm-8 mb-5"
+                        data-aos="zoom-in-up" data-aos-duration={1600}>
                         <Link href="/" className="footer-logov1 m-sm-0 m-auto">
-                            <img width={200} src="/assets/img/logo/logo.png" alt="img" />
+                            <img width={200} src="/assets/img/logo/logo.png" alt="img"/>
                         </Link>
                         {/*<Link href="/#mains" className="footer-topscroll d-center themebg">*/}
                         {/*    <i className="fas fa-arrow-up" />*/}
                         {/*</Link>*/}
                         <p className="pra-clr">
-                            &copy; {new Date().getFullYear()} Tous Droits Réservé par <Link href="https://webwazedigital.com" className="theme-clr">Web Waze Digital</Link> - Theme by Xstar &hearts;
+                            &copy; {new Date().getFullYear()} Tous Droits Réservé par <Link target={'_blank'}
+                                                                                            href="https://webwazedigital.com"
+                                                                                            className="theme-clr">Web
+                            Waze Digital <i className="fa fa-external-link"></i></Link>
                         </p>
                     </div>
                 </div>

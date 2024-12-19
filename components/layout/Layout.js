@@ -50,8 +50,8 @@ export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, chil
     return (
         <><div id="top" />
             {!headerStyle && <Header1 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} isSidebar={isSidebar} handleSidebar={handleSidebar} isSearch={isSearch} handleSearch={handleSearch} />}
-            {headerStyle == 1 ? <Header1 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} isSidebar={isSidebar} handleSidebar={handleSidebar} isSearch={isSearch} handleSearch={handleSearch} /> : null}
-            {headerStyle == 2 ? <Header2 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} isSidebar={isSidebar} handleSidebar={handleSidebar} isSearch={isSearch} handleSearch={handleSearch} /> : null}
+            {headerStyle === 1 ? <Header1 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} isSidebar={isSidebar} handleSidebar={handleSidebar} isSearch={isSearch} handleSearch={handleSearch} /> : null}
+            {headerStyle === 2 ? <Header2 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} isSidebar={isSidebar} handleSidebar={handleSidebar} isSearch={isSearch} handleSearch={handleSearch} /> : null}
 
             <Search isSearch={isSearch} handleSearch={handleSearch} />
 
@@ -62,10 +62,10 @@ export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, chil
             </main>
 
             {!footerStyle && < Footer1 />}
-            {footerStyle == 1 ? < Footer1 /> : null}
-            {footerStyle == 2 ? < Footer2 /> : null}
-            {footerStyle == 3 ? < Footer3 /> : null}
-            {footerStyle == 4 ? < Footer4 /> : null}
+            {footerStyle === 1 ? < Footer1 /> : null}
+            {footerStyle === 2 ? < Footer2 /> : null}
+            {footerStyle === 3 ? < Footer3 /> : null}
+            {footerStyle === 4 ? < Footer4 /> : null}
 
             <Sidebar isSidebar={isSidebar} handleSidebar={handleSidebar} />
 

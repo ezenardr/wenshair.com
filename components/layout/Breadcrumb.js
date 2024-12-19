@@ -15,7 +15,7 @@ export default function Breadcrumb({ breadcrumbTitle }) {
                                 <ul className="breadcrumnd d-inline-flex align-items-center gap-2 pra-border radius100 py-xxl-3 py-2 px-xxl-4 px-4" data-aos="zoom-in-right" data-aos-duration={2000}>
                                     <li>
                                         <Link href="/" className="text-uppercase htheme">
-                                            Home
+                                            Accueil
                                         </Link>
                                     </li>
                                     <li>
@@ -38,8 +38,8 @@ export default function Breadcrumb({ breadcrumbTitle }) {
                         <path d="M153.353 98.3617V190.413H210V1H20.5872V57.6468H112.638L2 168.285L42.7149 209L153.353 98.3617Z" stroke="url(#paint0_linear_6584_3026)" strokeWidth={2} />
                         <defs>
                             <linearGradient id="paint0_linear_6584_3026" x1="416.867" y1="-216.267" x2="8.49998" y2="192.1" gradientUnits="userSpaceOnUse">
-                                <stop offset={2} stopColor="#E3FF04" />
-                                <stop offset={1} stopColor="#FF7425" stopOpacity={0} />
+                                <stop offset={2} stopColor="#f2d129" />
+                                <stop offset={1} stopColor="#f2d129" stopOpacity={0} />
                             </linearGradient>
                         </defs>
                     </svg>
