@@ -40,7 +40,7 @@ export default function Service1({showActionLink = true}) {
                                                 </span>
                                             </span>
                                             <span className="mtitle d-block mt-6">
-                                                <Link href={"/service-details"} className="white-clr whitehover">
+                                                <Link href={"/service"} className="white-clr whitehover">
                                                     Coupes de cheveux
                                                 </Link>
                                             </span>
@@ -81,7 +81,7 @@ export default function Service1({showActionLink = true}) {
                                                 </span>
                                             </span>
                                             <span className="mtitle d-block mt-6">
-                                                <Link href={"/service-details"} className="white-clr whitehover">
+                                                <Link href={"/service"} className="white-clr whitehover">
                                                    Taille et entretien de barbe
                                                 </Link>
                                             </span>
@@ -122,7 +122,7 @@ export default function Service1({showActionLink = true}) {
                                                 </span>
                                             </span>
                                             <span className="mtitle d-block mt-6">
-                                                <Link href={"/service-details"} className="white-clr whitehover">
+                                                <Link href={"/service"} className="white-clr whitehover">
                                                     Dreadlocks
                                                 </Link>
                                             </span>
@@ -163,7 +163,7 @@ export default function Service1({showActionLink = true}) {
                                                 </span>
                                             </span>
                                             <span className="mtitle d-block mt-6">
-                                                <Link href={"/service-details"} className="white-clr whitehover">
+                                                <Link href={"/service"} className="white-clr whitehover">
                                                     Soins capillaires
                                                 </Link>
                                             </span>

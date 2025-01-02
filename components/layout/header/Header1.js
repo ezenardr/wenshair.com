@@ -18,7 +18,7 @@ export default function Header1({
                                     <img className="w-100" src="/assets/img/logo/logo.png" alt="logo"/>
                                 </Link>
                                 <div className="d-flex align-items-center gap-xxl-5 gap-5">
-                                    <button
+                                    <button name={'toggle'}
                                         className={`navbar-toggle-btn d-block d-lg-none ${isMobileMenu ? "open" : ""}`}
                                         type="button" onClick={handleMobileMenu}>
                                         <span/>
